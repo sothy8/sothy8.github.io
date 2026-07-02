@@ -12,7 +12,8 @@ permalink: /education/
     <span class="period">2022 – Present</span>
   </div>
   <p class="institution">Institute of Technology of Cambodia, Phnom Penh</p>
-  <p class="description">Applied Mathematics and Statistics</p>
+  <p class="description">Department of Applied Mathematics and Statistics</p>
+  <p class="description">GPA 4.0/4.0 Achievement</p>
   <div class="education-details">
     <p><strong>Focus Areas:</strong> Computer Vision, Deep Learning, Data Analysis, Statistics, AI Engineering</p>
     <p><strong>Relevant Coursework:</strong> Machine Learning, Statistical Methods, Data Structures, Algorithms, Linear Algebra, Probability Theory</p>
