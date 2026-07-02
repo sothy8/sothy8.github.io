@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built with Jekyll and hosted on GitHub Pages.
 
-## 🌐 Live Site
+## Live Site
 Visit: [https://sothy8.github.io](https://sothy8.github.io)
 
 ## 🛠️ Tech Stack
@@ -10,7 +10,7 @@ Visit: [https://sothy8.github.io](https://sothy8.github.io)
 - **jekyll-theme-cayman** - Beautiful responsive theme
 - **GitHub Pages** - Free hosting
 
-## 🚀 Local Development
+## Local Development
 
 To run this site locally:
 
@@ -23,7 +23,7 @@ To run this site locally:
    ```
 4. Open `http://localhost:4000` in your browser
 
-## 📝 About
+## About
 Data Scientist & AI Engineer specializing in Computer Vision, Deep Learning, and Data Analysis. Building real-world AI solutions for emerging markets.
 
 ---

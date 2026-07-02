@@ -4,7 +4,7 @@ title: Education - Sothy VANDETH
 permalink: /education/
 ---
 
-# 🎓 Education
+# Education
 
 <div class="education-item">
   <div class="education-header">

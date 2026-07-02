@@ -7,7 +7,7 @@ permalink: /projects/
 # Projects
 
 <div class="project-card">
-  <h3>🚗 Cambodian License Plate Recognition System</h3>
+  <h3>Cambodian License Plate Recognition System</h3>
   <p>Automatic License Plate Recognition (ALPRC) pipeline for Cambodian plates using Computer Vision and Deep Learning. Research published at <strong>ICAICI 2026</strong>.</p>
   <div class="skills">
     <span class="skill-tag">Computer Vision</span>
@@ -18,7 +18,7 @@ permalink: /projects/
 </div>
 
 <div class="project-card">
-  <h3>🎧 Khmer Audio Learning & AI Conversational Tutor</h3>
+  <h3>Khmer Audio Learning & AI Conversational Tutor</h3>
   <p>RAG-powered intelligent Khmer audio-based learning and conversational tutoring system designed for inclusive education in Cambodia. Published at <strong>IEEE TIC 2026</strong>.</p>
   <div class="skills">
     <span class="skill-tag">RAG</span>
@@ -29,7 +29,7 @@ permalink: /projects/
 </div>
 
 <div class="project-card">
-  <h3>🛒 Real-Time Grocery Sales Data Pipeline & AI Analytics</h3>
+  <h3>Real-Time Grocery Sales Data Pipeline & AI Analytics</h3>
   <p>End-to-end real-time data pipeline for grocery sales with an AI analytics layer for intelligent, data-driven business decisions.</p>
   <div class="skills">
     <span class="skill-tag">Data Pipeline</span>
@@ -40,7 +40,7 @@ permalink: /projects/
 </div>
 
 <div class="project-card">
-  <h3>🏪 Product Placement Optimization — GNN + RAG Graph</h3>
+  <h3>Product Placement Optimization — GNN + RAG Graph</h3>
   <p>Uses Graph Neural Networks as the reasoning brain of a RAG graph to optimize product placement on retail shelves through spatial graph reasoning.</p>
   <div class="skills">
     <span class="skill-tag">GNN</span>
@@ -51,7 +51,7 @@ permalink: /projects/
 </div>
 
 <div class="project-card">
-  <h3>👁️ Eyes Calibration and Tracking System</h3>
+  <h3>Eyes Calibration and Tracking System</h3>
   <p>Computer Vision-based eye calibration and tracking system for accurate gaze estimation and accessibility-focused applications.</p>
   <div class="skills">
     <span class="skill-tag">Computer Vision</span>
@@ -62,7 +62,7 @@ permalink: /projects/
 </div>
 
 <div class="project-card">
-  <h3>🧑‍💻 Face & Activity Recognition</h3>
+  <h3>Face & Activity Recognition</h3>
   <p>Face and activity recognition system combining <strong>InsightFace</strong> for face identification and <strong>CLIP</strong> for zero-shot activity understanding.</p>
   <div class="skills">
     <span class="skill-tag">InsightFace</span>
@@ -73,7 +73,7 @@ permalink: /projects/
 </div>
 
 <div class="project-card">
-  <h3>📊 MoEYS Lifelong Learning — Data Analysis & Visualization</h3>
+  <h3>MoEYS Lifelong Learning — Data Analysis & Visualization</h3>
   <p>Data analysis and visualization for Cambodia's National Action Plan on Lifelong Learning at the Ministry of Education, Youth, and Sport.</p>
   <div class="skills">
     <span class="skill-tag">Data Analysis</span>
