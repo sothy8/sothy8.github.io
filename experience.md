@@ -10,22 +10,22 @@ permalink: /experience/
 
 <div class="experience-item">
   <div class="experience-header">
-    <h3>Data Scientist Intern</h3>
+    <h3>Data Scientist Internship</h3>
     <span class="period">July 2026 – Present</span>
   </div>
   <p class="company">Ministry of Post and Telecommunications (MPTC), Phnom Penh</p>
   <p class="description">Working on LLM</p>
   <div class="skills">
-    <span class="skill-tag">Large Language Models</span>
+    <span class="skill-tag">Large Language Models (LLM)</span>
     <span class="skill-tag">Data Engineer</span>
-    <span class="skill-tag">Data Analytics</span>
+    <span class="skill-tag">Data Analysis</span>
     <span class="skill-tag">Deep Learning</span>
   </div>
 </div>
 
 <div class="experience-item">
   <div class="experience-header">
-    <h3>Data Scientist Intern</h3>
+    <h3>Data Scientist Internship</h3>
     <span class="period">June 2025 – December 2025</span>
   </div>
   <p class="company">Ministry of Education, Youth, and Sport (MoEYS), Phnom Penh</p>
@@ -50,6 +50,21 @@ permalink: /experience/
     <span class="skill-tag">Leadership</span>
     <span class="skill-tag">Team Coordination</span>
     <span class="skill-tag">AI Community</span>
+  </div>
+</div>
+
+<div class="experience-item">
+  <div class="experience-header">
+    <h3>🎓 Student Presenter</h3>
+    <span class="period">June 2023</span>
+  </div>
+  <p class="company">ITC-Sophia-MJIIT Exchange Students Program</p>
+  <p class="description">Selected as a presenter representing the Institute of Technology of Cambodia in an international academic exchange program between ITC (Cambodia), Sophia University (Japan), and Malaysia-Japan International Institute of Technology (MJIIT).</p>
+  <div class="skills">
+    <span class="skill-tag">Academic Presentation</span>
+    <span class="skill-tag">International Exchange</span>
+    <span class="skill-tag">Research Communication</span>
+    <span class="skill-tag">Cross-Cultural Collaboration</span>
   </div>
 </div>
 
