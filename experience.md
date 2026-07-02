@@ -4,7 +4,7 @@ title: Experience - Sothy VANDETH
 permalink: /experience/
 ---
 
-# 💼 Work Experience & Volunteering
+# Work Experience & Volunteering
 
 ## Professional Experience
 
@@ -121,7 +121,7 @@ permalink: /experience/
 
 <div class="experience-item">
   <div class="experience-header">
-    <h3>📚 Volunteer</h3>
+    <h3>Volunteer</h3>
     <span class="period">December 19–22, 2024</span>
   </div>
   <p class="company">Cambodia Book Fair 2024, Phnom Penh</p>
@@ -130,7 +130,7 @@ permalink: /experience/
 
 <div class="experience-item">
   <div class="experience-header">
-    <h3>🌐 Volunteer</h3>
+    <h3>Volunteer</h3>
     <span class="period">June 25, 2024</span>
   </div>
   <p class="company">Cambodia Cyber University Network (CCUN) Launch at ITC</p>
