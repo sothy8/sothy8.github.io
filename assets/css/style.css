@@ -357,6 +357,79 @@ tr:hover {
   margin-bottom: 12px;
 }
 
+/* Experience Page Styles */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.experience-header h3 {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.experience-item .company {
+  font-size: 1rem;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.experience-item .description {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+/* Competency Grid */
+.competency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.competency-card {
+  padding: 28px;
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.competency-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.competency-card i {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.competency-card h4 {
+  margin: 0 0 12px 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.competency-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
 /* Blockquotes */
 blockquote {
   border-left: 3px solid var(--border-color);
@@ -476,7 +549,17 @@ blockquote {
     align-items: flex-start;
   }
 
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .competency-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -488,6 +571,14 @@ blockquote {
 
   .achievement-item i {
     width: 100%;
+    text-align: left;
+  }
+
+  .competency-card {
+    text-align: left;
+  }
+
+  .competency-card i {
     text-align: left;
   }
 }
