@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Sothy Vandeth" class="profile-img" onerror="this.src='https://via.placeholder.com/150/2C3E50/FFFFFF?text=SV'">
+        <h2>{{ site.author }}</h2>
+        <p class="title">Data Scientist & AI Engineer</p>
+        <p class="affiliation">B.Eng. in Data Science<br>Institute of Technology of Cambodia</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia</p>
+      </div>
+      
+      <div class="contact">
+        <a href="mailto:{{ site.email }}" title="Email"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+        <a href="{{ '/publications/' | relative_url }}" class="{% if page.url contains 'publications' %}active{% endif %}">Publications</a>
+        <a href="{{ '/projects/' | relative_url }}" class="{% if page.url contains 'projects' %}active{% endif %}">Projects</a>
+        <a href="{{ '/contact/' | relative_url }}" class="{% if page.url contains 'contact' %}active{% endif %}">Contact</a>
+      </nav>
+
+      <!-- Page Content -->
+      <div class="main-content">
+        {{ content }}
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

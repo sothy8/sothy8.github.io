@@ -1,33 +1,15 @@
 ---
 layout: default
-title: Sothy VANDETH - Data Scientist & AI Engineer
+title: Home - Sothy VANDETH
 ---
 
-<h1 align="center">Hi, I'm Sothy VANDETH</h1>
+<div class="intro">
+  <h1>Hi, I'm Sothy VANDETH</h1>
+  <p class="subtitle">Data Scientist & AI Engineer</p>
+  <p class="description">Computer Vision · Deep Learning · Data Analysis<br>Building real-world AI solutions for emerging markets</p>
+</div>
 
-<p align="center">
-  <b>Data Scientist & AI Engineer</b> · Institute of Technology of Cambodia<br/>
-  Computer Vision · Deep Learning · Data Analysis<br/>
-  Building real-world AI solutions for emerging markets.
-</p>
-
-<p align="center">
-  <a href="mailto:sothyvandeth8034@gmail.com">
-    <img src="https://img.shields.io/badge/Email-sothyvandeth8034@gmail.com-D14836?style=flat&logo=gmail&logoColor=white"/>
-  </a>
-  &nbsp;
-  <a href="https://github.com/sothy8">
-    <img src="https://img.shields.io/badge/GitHub-sothy8-181717?style=flat&logo=github&logoColor=white"/>
-  </a>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Location-Phnom%20Penh%2C%20Cambodia-blue?style=flat&logo=google-maps&logoColor=white"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/IELTS-6.0-green?style=flat"/>
-</p>
-
----
-
-## 🙋 About Me
+## About Me
 
 I'm a **Data Science student** at the **Institute of Technology of Cambodia (ITC)**, pursuing a Bachelor of Engineering in Applied Mathematics and Statistics. I specialize in **Computer Vision**, **AI**, and **Data Analysis**, and I build real-world intelligent systems focused on accessibility, automation, and practical impact for emerging markets.
 
@@ -47,115 +29,209 @@ I enjoy solving complex problems, extracting meaningful insights from data, and 
 
 ## 🛠️ Skills
 
+<div class="skills-section">
+
 **AI & Machine Learning**
-`Computer Vision` `Deep Learning` `CNN` `GNN` `RAG` `InsightFace` `CLIP`
+
+<div class="skills">
+  <span class="skill-tag">Computer Vision</span>
+  <span class="skill-tag">Deep Learning</span>
+  <span class="skill-tag">CNN</span>
+  <span class="skill-tag">GNN</span>
+  <span class="skill-tag">RAG</span>
+  <span class="skill-tag">InsightFace</span>
+  <span class="skill-tag">CLIP</span>
+</div>
 
 **Programming & Data**
-`Python` `Data Analysis` `Statistics` `Data Visualization` `Git`
+
+<div class="skills">
+  <span class="skill-tag">Python</span>
+  <span class="skill-tag">Data Analysis</span>
+  <span class="skill-tag">Statistics</span>
+  <span class="skill-tag">Data Visualization</span>
+  <span class="skill-tag">Git</span>
+</div>
 
 **Professional**
-`Leadership` `Event Organizing` `Problem-Solving` `Teamwork` `Public Speaking`
+
+<div class="skills">
+  <span class="skill-tag">Leadership</span>
+  <span class="skill-tag">Event Organizing</span>
+  <span class="skill-tag">Problem-Solving</span>
+  <span class="skill-tag">Teamwork</span>
+  <span class="skill-tag">Public Speaking</span>
+</div>
 
 **Languages**
-`Khmer (Native)` `English (IELTS 6.0)` `French (Basic)`
+
+<div class="skills">
+  <span class="skill-tag">Khmer (Native)</span>
+  <span class="skill-tag">English (IELTS 6.0)</span>
+  <span class="skill-tag">French (Basic)</span>
+</div>
+
+</div>
 
 ---
 
 ## 💼 Work Experience & Volunteering
 
-**🔬 Data Scientist Intern** — Ministry of Education, Youth, and Sport (MoEYS) *(Jun 2025 – Dec 2025)*
-> Conducted data analysis and visualization for Cambodia's National Action Plan on Lifelong Learning, delivering data-driven insights to support national education policy.
+<div class="experience-item">
+  <h3>🔬 Data Scientist Intern — Ministry of Education, Youth, and Sport (MoEYS)</h3>
+  <p class="period">Jun 2025 – Dec 2025</p>
+  <p>Conducted data analysis and visualization for Cambodia's National Action Plan on Lifelong Learning, delivering data-driven insights to support national education policy.</p>
+</div>
 
-**📋 Events Coordinator** — Computer Vision & AI Club, ITC-AMS *(May 2025 – Present)*
-> Organizing and coordinating events for the Computer Vision and Artificial Intelligence Club at ITC's Department of Applied Mathematics and Statistics.
+<div class="experience-item">
+  <h3>📋 Events Coordinator — Computer Vision & AI Club, ITC-AMS</h3>
+  <p class="period">May 2025 – Present</p>
+  <p>Organizing and coordinating events for the Computer Vision and Artificial Intelligence Club at ITC's Department of Applied Mathematics and Statistics.</p>
+</div>
 
-**🎙️ Master of Ceremonies (MC)** — Defense Day, Dept. of Applied Mathematics & Statistics *(Jul 9–10, 2025)*
+<div class="experience-item">
+  <h3>🎙️ Master of Ceremonies (MC) — Defense Day, Dept. of Applied Mathematics & Statistics</h3>
+  <p class="period">Jul 9–10, 2025</p>
+</div>
 
-**🌏 Volunteer** — Nokor Sankranta 2026, Phnom Penh *(Apr 11–19, 2026)*
+<div class="experience-item">
+  <h3>🌏 Volunteer — Nokor Sankranta 2026, Phnom Penh</h3>
+  <p class="period">Apr 11–19, 2026</p>
+</div>
 
-**🌏 Volunteer** — Angkor Sankranta 2025, Siem Reap *(Apr 12–17, 2025)*
+<div class="experience-item">
+  <h3>🌏 Volunteer — Angkor Sankranta 2025, Siem Reap</h3>
+  <p class="period">Apr 12–17, 2025</p>
+</div>
 
-**🤝 Volunteer** — AIESEC in Cambodia, Incoming Global Teacher / International Relations Team *(Jul 2024 – Jan 2025)*
+<div class="experience-item">
+  <h3>🤝 Volunteer — AIESEC in Cambodia</h3>
+  <p class="period">Jul 2024 – Jan 2025</p>
+  <p>Incoming Global Teacher / International Relations Team</p>
+</div>
 
-**📚 Volunteer** — Cambodia Book Fair 2024, Event Facilitation Team, Phnom Penh *(Dec 19–22, 2024)*
+<div class="experience-item">
+  <h3>📚 Volunteer — Cambodia Book Fair 2024</h3>
+  <p class="period">Dec 19–22, 2024</p>
+  <p>Event Facilitation Team, Phnom Penh</p>
+</div>
 
-**🌐 Volunteer** — Launching Event of CCUN (Cambodia Cyber University Network) at ITC *(Jun 25, 2024)*
+<div class="experience-item">
+  <h3>🌐 Volunteer — Launching Event of CCUN at ITC</h3>
+  <p class="period">Jun 25, 2024</p>
+  <p>Cambodia Cyber University Network</p>
+</div>
 
 ---
 
 ## 🚀 Projects
 
-### 🚗 Cambodian License Plate Recognition System
-Automatic License Plate Recognition (ALPRC) pipeline for Cambodian plates using Computer Vision and Deep Learning. Research published at **ICAICI 2026**.
-`Computer Vision` `Deep Learning` `OCR` `Python`
+<div class="project-card">
+  <h3>🚗 Cambodian License Plate Recognition System</h3>
+  <p>Automatic License Plate Recognition (ALPRC) pipeline for Cambodian plates using Computer Vision and Deep Learning. Research published at <strong>ICAICI 2026</strong>.</p>
+  <div class="skills">
+    <span class="skill-tag">Computer Vision</span>
+    <span class="skill-tag">Deep Learning</span>
+    <span class="skill-tag">OCR</span>
+    <span class="skill-tag">Python</span>
+  </div>
+</div>
 
----
+<div class="project-card">
+  <h3>🎧 Khmer Audio Learning & AI Conversational Tutor</h3>
+  <p>RAG-powered intelligent Khmer audio-based learning and conversational tutoring system designed for inclusive education in Cambodia. Published at <strong>IEEE TIC 2026</strong>.</p>
+  <div class="skills">
+    <span class="skill-tag">RAG</span>
+    <span class="skill-tag">NLP</span>
+    <span class="skill-tag">Audio AI</span>
+    <span class="skill-tag">Khmer Language</span>
+  </div>
+</div>
 
-### 🎧 Khmer Audio Learning & AI Conversational Tutor
-RAG-powered intelligent Khmer audio-based learning and conversational tutoring system designed for inclusive education in Cambodia. Published at **IEEE TIC 2026**.
-`RAG` `NLP` `Audio AI` `Khmer Language`
+<div class="project-card">
+  <h3>🛒 Real-Time Grocery Sales Data Pipeline & AI Analytics</h3>
+  <p>End-to-end real-time data pipeline for grocery sales with an AI analytics layer for intelligent, data-driven business decisions.</p>
+  <div class="skills">
+    <span class="skill-tag">Data Pipeline</span>
+    <span class="skill-tag">Real-Time Systems</span>
+    <span class="skill-tag">AI Analytics</span>
+    <span class="skill-tag">Python</span>
+  </div>
+</div>
 
----
+<div class="project-card">
+  <h3>🏪 Product Placement Optimization — GNN + RAG Graph</h3>
+  <p>Uses Graph Neural Networks as the reasoning brain of a RAG graph to optimize product placement on retail shelves through spatial graph reasoning.</p>
+  <div class="skills">
+    <span class="skill-tag">GNN</span>
+    <span class="skill-tag">RAG</span>
+    <span class="skill-tag">Graph AI</span>
+    <span class="skill-tag">Retail Optimization</span>
+  </div>
+</div>
 
-### 🛒 Real-Time Grocery Sales Data Pipeline & AI Analytics
-End-to-end real-time data pipeline for grocery sales with an AI analytics layer for intelligent, data-driven business decisions.
-`Data Pipeline` `Real-Time Systems` `AI Analytics` `Python`
+<div class="project-card">
+  <h3>👁️ Eyes Calibration and Tracking System</h3>
+  <p>Computer Vision-based eye calibration and tracking system for accurate gaze estimation and accessibility-focused applications.</p>
+  <div class="skills">
+    <span class="skill-tag">Computer Vision</span>
+    <span class="skill-tag">Eye Tracking</span>
+    <span class="skill-tag">OpenCV</span>
+    <span class="skill-tag">Python</span>
+  </div>
+</div>
 
----
+<div class="project-card">
+  <h3>🧑‍💻 Face & Activity Recognition</h3>
+  <p>Face and activity recognition system combining <strong>InsightFace</strong> for face identification and <strong>CLIP</strong> for zero-shot activity understanding.</p>
+  <div class="skills">
+    <span class="skill-tag">InsightFace</span>
+    <span class="skill-tag">CLIP</span>
+    <span class="skill-tag">Face Recognition</span>
+    <span class="skill-tag">Python</span>
+  </div>
+</div>
 
-### 🏪 Product Placement Optimization — GNN + RAG Graph
-Uses Graph Neural Networks as the reasoning brain of a RAG graph to optimize product placement on retail shelves through spatial graph reasoning.
-`GNN` `RAG` `Graph AI` `Retail Optimization`
-
----
-
-### 👁️ Eyes Calibration and Tracking System
-Computer Vision-based eye calibration and tracking system for accurate gaze estimation and accessibility-focused applications.
-`Computer Vision` `Eye Tracking` `OpenCV` `Python`
-
----
-
-### 🧑‍💻 Face & Activity Recognition
-Face and activity recognition system combining **InsightFace** for face identification and **CLIP** for zero-shot activity understanding.
-`InsightFace` `CLIP` `Face Recognition` `Python`
-
----
-
-### 📊 MoEYS Lifelong Learning — Data Analysis & Visualization
-Data analysis and visualization for Cambodia's National Action Plan on Lifelong Learning at the Ministry of Education, Youth, and Sport.
-`Data Analysis` `Data Visualization` `Education Policy` `MoEYS`
+<div class="project-card">
+  <h3>📊 MoEYS Lifelong Learning — Data Analysis & Visualization</h3>
+  <p>Data analysis and visualization for Cambodia's National Action Plan on Lifelong Learning at the Ministry of Education, Youth, and Sport.</p>
+  <div class="skills">
+    <span class="skill-tag">Data Analysis</span>
+    <span class="skill-tag">Data Visualization</span>
+    <span class="skill-tag">Education Policy</span>
+    <span class="skill-tag">MoEYS</span>
+  </div>
+</div>
 
 ---
 
 ## 📄 Publications
 
-### 📘 IEEE TIC 2026
-**"RAG-Powered Khmer Audio Learning & AI Conversational Tutor for Inclusive Education"**
-*IEEE Technology & Innovation Conference (TIC 2026) · June 5–6, 2026 · Kuala Lumpur, Malaysia*
+<div class="publication">
+  <h3>📘 RAG-Powered Khmer Audio Learning & AI Conversational Tutor for Inclusive Education</h3>
+  <p class="meta">IEEE Technology & Innovation Conference (TIC 2026) · June 5–6, 2026 · Kuala Lumpur, Malaysia</p>
+  <p>Introduces a RAG-powered system for Khmer audio-based learning and AI conversational tutoring to support inclusive education in Cambodia.</p>
+</div>
 
-> Introduces a RAG-powered system for Khmer audio-based learning and AI conversational tutoring to support inclusive education in Cambodia.
-
----
-
-### 📗 ICAICI 2026
-**"Automatic License Plate Recognition in Cambodia (ALPRC) Using Computer Vision and Deep Learning"**
-*International Conference on AI and Computing Innovation (ICAICI 2026) · May 9–10, 2026 · Kuala Lumpur, Malaysia*
-
-> Proposes a complete pipeline for detecting and recognizing Cambodian license plates using Computer Vision and Deep Learning techniques.
+<div class="publication">
+  <h3>📗 Automatic License Plate Recognition in Cambodia (ALPRC) Using Computer Vision and Deep Learning</h3>
+  <p class="meta">International Conference on AI and Computing Innovation (ICAICI 2026) · May 9–10, 2026 · Kuala Lumpur, Malaysia</p>
+  <p>Proposes a complete pipeline for detecting and recognizing Cambodian license plates using Computer Vision and Deep Learning techniques.</p>
+</div>
 
 ---
 
 ## 📬 Contact
 
-| | |
-|---|---|
-| 📧 Email | [sothyvandeth8034@gmail.com](mailto:sothyvandeth8034@gmail.com) |
-| 📞 Phone | +855 12 628 034 / +855 16 202 309 |
-| 💻 GitHub | [github.com/sothy8](https://github.com/sothy8) |
-| 📍 Location | Mean Chey, Phnom Penh, Cambodia |
+Interested in collaborating or learning more about my work? Feel free to reach out!
+
+- **📧 Email:** [sothyvandeth8034@gmail.com](mailto:sothyvandeth8034@gmail.com)
+- **📞 Phone:** +855 12 628 034 / +855 16 202 309
+- **💻 GitHub:** [github.com/sothy8](https://github.com/sothy8)
+- **📍 Location:** Mean Chey, Phnom Penh, Cambodia
 
 ---
 
-<p align="center">
-  <i>Open to internships, research collaborations, and exciting AI/Data Science projects.</i>
+<p style="text-align: center; font-style: italic; color: #7F8C8D;">
+  Open to internships, research collaborations, and exciting AI/Data Science projects.
 </p>
