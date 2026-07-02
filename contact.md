@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact - Sothy VANDETH
+permalink: /contact/
 ---
 
 # Contact

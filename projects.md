@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projects - Sothy VANDETH
+permalink: /projects/
 ---
 
 # Projects

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Publications - Sothy VANDETH
+permalink: /publications/
 ---
 
 # Publications
