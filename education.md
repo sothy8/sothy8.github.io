@@ -8,11 +8,11 @@ permalink: /education/
 
 <div class="education-item">
   <div class="education-header">
-    <h3>Bachelor of Engineering in Data Science</h3>
+    <h3>Bachelor of Engineering in Data Science (GPA 4.0/4.0) </h3>
     <span class="period">2022 – Present</span>
   </div>
   <p class="institution">Institute of Technology of Cambodia, Phnom Penh</p>
-  <p class="description">Applied Mathematics and Statistics</p>
+  <p class="description">Department of Applied Mathematics and Statistics</p>
   <div class="education-details">
     <p><strong>Focus Areas:</strong> Computer Vision, Deep Learning, Data Analysis, Statistics, AI Engineering</p>
     <p><strong>Relevant Coursework:</strong> Machine Learning, Statistical Methods, Data Structures, Algorithms, Linear Algebra, Probability Theory</p>
