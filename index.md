@@ -4,7 +4,7 @@ title: Sothy VANDETH
 ---
 
 <div class="intro">
-  <h1>Hi, I'm Sothy VANDETH</h1>
+  <h1>Sothy VANDETH</h1>
   <p class="subtitle">Data Scientist & AI Engineer</p>
 </div>
 

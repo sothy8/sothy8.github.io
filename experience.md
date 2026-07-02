@@ -55,7 +55,7 @@ permalink: /experience/
 
 <div class="experience-item">
   <div class="experience-header">
-    <h3>🎓 Student Presenter</h3>
+    <h3>Student Presenter</h3>
     <span class="period">June 2023</span>
   </div>
   <p class="company">ITC-Sophia-MJIIT Exchange Students Program</p>
