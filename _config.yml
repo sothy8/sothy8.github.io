@@ -11,18 +11,12 @@ twitter_username: ""
 linkedin_username: "sothy-vandeth"
 
 # --- Build Settings ---
-# This is a plain HTML/CSS/JS site — no Jekyll theme or processing needed.
-# Jekyll is used only to satisfy GitHub Pages; it passes files through as-is.
-theme: null
-plugins: []
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # --- File Processing ---
-# Tell Jekyll not to process these files as Liquid templates
-include:
-  - index.html
-  - style.css
-  - script.js
-
 # Exclude development files from the build output
 exclude:
   - README.md
