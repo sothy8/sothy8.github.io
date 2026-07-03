@@ -17,6 +17,7 @@ permalink: /experience/
   <p class="description">Working on LLM</p>
   <div class="skills">
     <span class="skill-tag">Large Language Models (LLM)</span>
+    <span class="skill-tag">Natural Language Processing (NLP)</span>
     <span class="skill-tag">Data Engineer</span>
     <span class="skill-tag">Data Analysis</span>
     <span class="skill-tag">Deep Learning</span>
