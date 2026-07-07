@@ -14,7 +14,7 @@ permalink: /experience/
     <span class="period">July 2026 – Present</span>
   </div>
   <p class="company">Ministry of Post and Telecommunications (MPTC), Phnom Penh</p>
-  <p class="description">Working on LLM</p>
+  <p class="description">Working under Department of National Information Infrastructure and Video Conference of the Royal Government.</p>
   <div class="skills">
     <span class="skill-tag">Large Language Models (LLM)</span>
     <span class="skill-tag">Natural Language Processing (NLP)</span>
