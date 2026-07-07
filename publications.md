@@ -11,7 +11,7 @@ permalink: /publications/
   <p class="meta">IEEE Technology & Innovation Conference (TIC 2026) · June 5–6, 2026 · Kuala Lumpur, Malaysia</p>
   <p>Introduces a RAG-powered system for Khmer audio-based learning and AI conversational tutoring to support inclusive education in Cambodia.</p>
   <p><strong>Authors:</strong> Sothy Vandeth, Co-authors TBD</p>
-  <p><strong>Under Supervision of: </strong>Asst. Prof. Sokkhey PHAUK (PhD) and Dr. Sothea HAS</p>
+  <p><strong>Under Supervision of: </strong>Asst. Prof. Dr. Sokkhey PHAUK and Dr. Sothea HAS</p>
   <p><strong>Keywords:</strong> RAG, NLP, Audio AI, Khmer Language, Inclusive Education</p>
 </div>
 
