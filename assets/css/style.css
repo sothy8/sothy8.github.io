@@ -32,10 +32,10 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
-  width: 220px;
+  width: 320px;
   background: var(--sidebar-bg);
   color: var(--text-color);
-  padding: 60px 30px;
+  padding: 60px 40px;
   position: fixed;
   height: 100vh;
   overflow-y: auto;
@@ -51,8 +51,8 @@ body {
 }
 
 .profile-img {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 15%;
@@ -124,7 +124,7 @@ body {
 
 /* Main Content */
 .content {
-  margin-left: 220px;
+  margin-left: 320px;
   flex: 1;
   background: white;
 }
