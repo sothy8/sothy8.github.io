@@ -23,21 +23,6 @@ body {
   color: var(--text-color);
   background-color: #FFFFFF;
   font-size: 16px;
-  position: relative;
-  overflow-x: hidden;
-}
-
-/* Animated Background */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #FFFFFF;
-  z-index: -2;
-  pointer-events: none;
 }
 
 .particles {
@@ -46,7 +31,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
   overflow: hidden;
 }
@@ -96,7 +81,7 @@ svg.network-lines {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -104,7 +89,7 @@ svg.network-lines {
   display: flex;
   min-height: 100vh;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Sidebar Styles */
@@ -117,7 +102,7 @@ svg.network-lines {
   height: 100vh;
   overflow-y: auto;
   border-right: 1px solid var(--border-color);
-  z-index: 10;
+  z-index: 11;
 }
 
 .profile {
@@ -206,7 +191,7 @@ svg.network-lines {
   flex: 1;
   background: #FFFFFF;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav {
