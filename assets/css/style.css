@@ -189,7 +189,7 @@ svg.network-lines {
 .content {
   margin-left: 320px;
   flex: 1;
-  background: #FFFFFF;
+  background: transparent;
   position: relative;
   z-index: 3;
 }
