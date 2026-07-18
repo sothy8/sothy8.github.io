@@ -200,7 +200,7 @@ svg.network-lines line {
 }
 
 .nav {
-  background: transparent;
+  background: whitesmoke;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -415,6 +415,7 @@ tr:hover {
   margin-bottom: 32px;
   padding-left: 24px;
   border-left: 2px solid var(--border-color);
+  background: whitesmoke;
 }
 
 .experience-item h3 {
