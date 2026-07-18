@@ -27,7 +27,6 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
   min-height: 100vh;
 }
 
@@ -162,8 +161,10 @@ body {
 }
 
 .main-content {
-  padding: 60px 80px;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1100px;
+  padding: 60px;
+  margin: 0 auto;
 }
 
 /* Typography */
