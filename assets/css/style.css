@@ -200,7 +200,7 @@ svg.network-lines line {
 }
 
 .nav {
-  background: whitesmoke;
+  background: white;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -514,7 +514,7 @@ blockquote {
 
 /* Footer */
 .footer {
-  background: whitesmoke;
+  background: white;
   padding: 40px 100px;
   text-align: center;
   color: var(--light-text);
