@@ -35,7 +35,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #0052cc 0%, #0066cc 50%, #003d99 100%);
+  background: #FFFFFF;
   z-index: -2;
   pointer-events: none;
 }
@@ -53,11 +53,12 @@ body::before {
 
 .particle {
   position: absolute;
-  width: 8px;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.6);
+  width: 6px;
+  height: 6px;
+  background: rgba(100, 150, 220, 0.5);
   border-radius: 50%;
   animation: float 20s infinite ease-in-out;
+  box-shadow: 0 0 15px rgba(100, 150, 220, 0.3);
 }
 
 .particle::after {
@@ -65,26 +66,26 @@ body::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(100, 150, 220, 0.2);
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(100, 150, 220, 0.15);
 }
 
 @keyframes float {
   0%, 100% {
     transform: translate(0, 0);
-    opacity: 0.6;
+    opacity: 0.4;
   }
   25% {
     transform: translate(var(--tx), var(--ty));
-    opacity: 0.4;
+    opacity: 0.3;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   75% {
     transform: translate(calc(var(--tx) * -0.5), calc(var(--ty) * -0.5));
-    opacity: 0.5;
+    opacity: 0.35;
   }
 }
 
@@ -109,7 +110,7 @@ svg.network-lines {
 /* Sidebar Styles */
 .sidebar {
   width: 320px;
-  background: rgba(250, 250, 250, 0.95);
+  background: #FFFFFF;
   color: var(--text-color);
   padding: 60px 40px;
   position: fixed;
@@ -203,7 +204,7 @@ svg.network-lines {
 .content {
   margin-left: 320px;
   flex: 1;
-  background: rgba(255, 255, 255, 0.97);
+  background: #FFFFFF;
   position: relative;
   z-index: 2;
 }
