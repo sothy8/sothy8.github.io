@@ -56,29 +56,70 @@
   </div>
 
   <script>
-    // Generate particles
+    // Generate particles with better distribution
     const particlesContainer = document.getElementById('particles');
-    const particleCount = 50;
+    const particleCount = 60;
+    const particleData = [];
 
     for (let i = 0; i < particleCount; i++) {
       const particle = document.createElement('div');
       particle.className = 'particle';
-      particle.style.left = Math.random() * 100 + '%';
-      particle.style.top = Math.random() * 100 + '%';
-      particle.style.animationDelay = Math.random() * 20 + 's';
-      particle.style.animationDuration = (15 + Math.random() * 15) + 's';
-      particle.style.setProperty('--tx', (Math.random() - 0.5) * 200 + 'px');
-      particle.style.setProperty('--ty', (Math.random() - 0.5) * 200 + 'px');
+      
+      const x = Math.random() * 100;
+      const y = Math.random() * 100;
+      const tx = (Math.random() - 0.5) * 300;
+      const ty = (Math.random() - 0.5) * 300;
+      const duration = 20 + Math.random() * 20;
+      const delay = Math.random() * 20;
+      
+      particle.style.left = x + '%';
+      particle.style.top = y + '%';
+      particle.style.animationDelay = delay + 's';
+      particle.style.animationDuration = duration + 's';
+      particle.style.setProperty('--tx', tx + 'px');
+      particle.style.setProperty('--ty', ty + 'px');
+      
       particlesContainer.appendChild(particle);
+      particleData.push({ element: particle, x, y, tx, ty });
     }
 
-    // Generate network lines
+    // Generate network lines with gradient effect
     const svg = document.getElementById('network-lines');
     const particles = Array.from(particlesContainer.querySelectorAll('.particle'));
     
+    // Create gradient definition for lines
+    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+    const gradient = document.createElementNS('http://www.w3.org/2000/svg', 'linearGradient');
+    gradient.setAttribute('id', 'lineGradient');
+    gradient.setAttribute('x1', '0%');
+    gradient.setAttribute('y1', '0%');
+    gradient.setAttribute('x2', '100%');
+    gradient.setAttribute('y2', '0%');
+    
+    const stop1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+    stop1.setAttribute('offset', '0%');
+    stop1.setAttribute('style', 'stop-color:rgba(52, 152, 219, 0.8);stop-opacity:1');
+    
+    const stop2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+    stop2.setAttribute('offset', '50%');
+    stop2.setAttribute('style', 'stop-color:rgba(41, 128, 185, 1);stop-opacity:1');
+    
+    const stop3 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+    stop3.setAttribute('offset', '100%');
+    stop3.setAttribute('style', 'stop-color:rgba(52, 152, 219, 0.8);stop-opacity:1');
+    
+    gradient.appendChild(stop1);
+    gradient.appendChild(stop2);
+    gradient.appendChild(stop3);
+    defs.appendChild(gradient);
+    svg.appendChild(defs);
+    
     function updateLines() {
-      svg.innerHTML = '';
-      const lines = svg.createElementNS('http://www.w3.org/2000/svg', 'g');
+      // Remove old lines but keep defs
+      const oldLines = svg.querySelector('g');
+      if (oldLines) oldLines.remove();
+      
+      const lines = document.createElementNS('http://www.w3.org/2000/svg', 'g');
       
       particles.forEach((particle, i) => {
         const rect1 = particle.getBoundingClientRect();
@@ -94,14 +135,22 @@
             
             const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
             
-            if (distance < 300) {
+            if (distance < 250) {
               const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
               line.setAttribute('x1', x1);
               line.setAttribute('y1', y1);
               line.setAttribute('x2', x2);
               line.setAttribute('y2', y2);
-              line.setAttribute('stroke', 'rgba(100, 150, 220, 0.6)');
-              line.setAttribute('stroke-width', '2');
+              
+              // Calculate opacity based on distance
+              const opacity = 1 - (distance / 250);
+              line.setAttribute('stroke', `rgba(41, 128, 185, ${opacity * 0.7})`);
+              line.setAttribute('stroke-width', '1.5');
+              line.setAttribute('stroke-linecap', 'round');
+              
+              // Add glow effect with filter
+              line.style.filter = 'drop-shadow(0 0 2px rgba(41, 128, 185, 0.6))';
+              
               lines.appendChild(line);
             }
           }
@@ -111,9 +160,25 @@
       svg.appendChild(lines);
     }
 
-    // Update lines on animation frame
-    setInterval(updateLines, 100);
+    // Smooth animation loop
+    let animationFrame;
+    function animate() {
+      updateLines();
+      animationFrame = requestAnimationFrame(animate);
+    }
+    
+    // Initial render
     updateLines();
+    
+    // Start smooth animation after a short delay
+    setTimeout(() => {
+      animate();
+    }, 100);
+    
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+      if (animationFrame) cancelAnimationFrame(animationFrame);
+    });
   </script>
 </body>
 </html>
