@@ -124,7 +124,7 @@ svg.network-lines line {
   border-radius: 50%;
   object-fit: cover;
   object-position: center 15%;
-  border: 4px solid white;
+  border: 4px solid whitesmoke;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin: 0 auto 28px auto;
   display: block;
@@ -283,7 +283,7 @@ a:hover {
 
 /* Intro Section */
 .intro {
-  background: var(--sidebar-bg);
+  background: whitesmoke;
   color: var(--text-color);
   padding: 56px 48px;
   border: 1px solid var(--border-color);
@@ -322,7 +322,7 @@ a:hover {
 }
 
 .skill-tag {
-  background: white;
+  background: whitesmoke;
   color: var(--text-color);
   padding: 6px 14px;
   border-radius: 4px;
@@ -342,7 +342,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 24px 0;
-  background: white;
+  background: whitesmoke;
   border: 1px solid var(--border-color);
 }
 
@@ -369,7 +369,7 @@ tr:hover {
 
 /* Project Cards */
 .project-card {
-  background: white;
+  background: whitesmoke;
   border: 1px solid var(--border-color);
   border-radius: 0;
   padding: 28px;
@@ -389,7 +389,7 @@ tr:hover {
 
 /* Publication Items */
 .publication {
-  background: white;
+  background: whitesmoke;
   border: 1px solid var(--border-color);
   border-left: 3px solid var(--accent-color);
   padding: 28px;
@@ -474,6 +474,7 @@ tr:hover {
   border-radius: 0;
   text-align: center;
   transition: all 0.2s ease;
+  background: whitesmoke;
 }
 
 .competency-card:hover {
@@ -512,7 +513,7 @@ blockquote {
 
 /* Footer */
 .footer {
-  background: transparent;
+  background: whitesmoke;
   padding: 40px 100px;
   text-align: center;
   color: var(--light-text);
@@ -537,6 +538,7 @@ blockquote {
   border: 1px solid var(--border-color);
   border-radius: 0;
   transition: border-color 0.2s ease;
+  background: whitesmoke;
 }
 
 .contact-item:hover {
@@ -668,7 +670,7 @@ html {
 /* Selection */
 ::selection {
   background: var(--accent-color);
-  color: white;
+  color: whitesmoke;
 }
 
 /* Education Section Styling */
@@ -686,7 +688,7 @@ html {
 
 /* Education Page Styles */
 .education-item {
-  background: white;
+  background: whitesmoke;
   border: 1px solid var(--border-color);
   border-left: 3px solid var(--accent-color);
   padding: 28px;
@@ -756,6 +758,7 @@ html {
 }
 
 .achievement-item {
+  background: whitesmoke;
   display: flex;
   gap: 20px;
   align-items: flex-start;
@@ -803,6 +806,7 @@ html {
   padding: 24px;
   border: 1px solid var(--border-color);
   border-radius: 0;
+  background: whitesmoke;
 }
 
 .skill-category h4 {
