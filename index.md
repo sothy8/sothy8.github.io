@@ -455,8 +455,8 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
       <div class="glass-card">
         <h3>Enhancing Deep Learning-Based Air Pollution Prediction Through Dropout Regularization</h3>
         <div class="pub-meta"><i class="fas fa-award"></i> AIoTC 2026 · Singapore (Aug 7-9, 2026)</div>
-        <p class="pub-description">Manuscript No: 2126061913190006956. Accepted for oral presentation. Published by IEEE and submitted to EI Compendex & Scopus.</p>
-        <p class="pub-authors"><strong>Authors:</strong> Pakrigna Long, Sothy Vandeth, Kimlong Ngin</p>
+        <p class="pub-description">Accepted for oral presentation. Published by IEEE and submitted to EI Compendex & Scopus.</p>
+        <p class="pub-authors"><strong>Authors:</strong>Sothy Vandeth, Co-authors TBD</p>
         <div class="pub-keywords skills-group">
           <span class="skill-tag">Deep Learning</span>
           <span class="skill-tag">Air Pollution Prediction</span>
