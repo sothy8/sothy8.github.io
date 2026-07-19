@@ -5,151 +5,361 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="keywords" content="Data Scientist, AI Engineer, Computer Vision, Deep Learning, Cambodia, Sothy Vandeth">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <!-- Animated Background -->
+  <div class="bg-gradient"></div>
   <div class="particles" id="particles"></div>
   <svg class="network-lines" id="network-lines"></svg>
 
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="{{ '/assets/images/VST.jpg' | relative_url }}" alt="Sothy VANDETH" class="profile-img">
-        <h2>{{ site.author }}</h2>
-        <p class="title">Data Scientist & AI Engineer</p>
-        <p class="affiliation">B.Eng. in Data Science<br>Institute of Technology of Cambodia</p>
-        <p class="location"><i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia</p>
-      </div>
-      
-      <div class="contact">
-        <a href="mailto:{{ site.email }}" title="Email"><i class="fas fa-envelope"></i> Email</a>
-        <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      </div>
-    </aside>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <!-- Main Content -->
-    <main class="content">
-      <!-- Navigation -->
-      <nav class="nav">
-        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-        <a href="{{ '/education/' | relative_url }}" class="{% if page.url contains 'education' %}active{% endif %}">Education</a>
-        <a href="{{ '/experience/' | relative_url }}" class="{% if page.url contains 'experience' %}active{% endif %}">Experience</a>
-        <a href="{{ '/publications/' | relative_url }}" class="{% if page.url contains 'publications' %}active{% endif %}">Publications</a>
-        <a href="{{ '/projects/' | relative_url }}" class="{% if page.url contains 'projects' %}active{% endif %}">Projects</a>
-        <a href="{{ '/contact/' | relative_url }}" class="{% if page.url contains 'contact' %}active{% endif %}">Contact</a>
-      </nav>
+  <!-- Page Content -->
+  <div class="page-wrapper">
+    {{ content }}
 
-      <!-- Page Content -->
-      <div class="main-content">
-        {{ content }}
-      </div>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
-      </footer>
-    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
+    </footer>
   </div>
 
   <script>
-    // Generate particles with smoother distribution
+    // ==============================
+    // Particle System (Enhanced)
+    // ==============================
     const particlesContainer = document.getElementById('particles');
-    const particleCount = 50;
-    const particleData = [];
+    const particleCount = 45;
+    const particleDataArr = [];
 
     for (let i = 0; i < particleCount; i++) {
       const particle = document.createElement('div');
       particle.className = 'particle';
-      
+
       const x = Math.random() * 100;
       const y = Math.random() * 100;
       const tx = (Math.random() - 0.5) * 150;
       const ty = (Math.random() - 0.5) * 150;
       const duration = 35 + Math.random() * 25;
       const delay = Math.random() * 10;
-      
+      const size = 2 + Math.random() * 2;
+
       particle.style.left = x + '%';
       particle.style.top = y + '%';
+      particle.style.width = size + 'px';
+      particle.style.height = size + 'px';
       particle.style.animationDelay = delay + 's';
       particle.style.animationDuration = duration + 's';
       particle.style.setProperty('--tx', tx + 'px');
       particle.style.setProperty('--ty', ty + 'px');
-      
+
+      // Vary particle colors
+      const colors = [
+        'rgba(59, 130, 246, 0.5)',
+        'rgba(6, 182, 212, 0.4)',
+        'rgba(139, 92, 246, 0.35)',
+      ];
+      particle.style.background = colors[i % colors.length];
+      particle.style.boxShadow = `0 0 ${6 + Math.random() * 8}px ${colors[i % colors.length]}`;
+
       particlesContainer.appendChild(particle);
-      particleData.push({ element: particle, x, y, tx, ty });
+      particleDataArr.push({ element: particle, x, y, tx, ty });
     }
 
-    // Generate network lines with soft transitions
+    // Network lines
     const svg = document.getElementById('network-lines');
-    const particles = Array.from(particlesContainer.querySelectorAll('.particle'));
-    
+    const allParticles = Array.from(particlesContainer.querySelectorAll('.particle'));
+
     function updateLines() {
-      // Remove old lines
       const oldLines = svg.querySelector('g');
       if (oldLines) oldLines.remove();
-      
-      const lines = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-      
-      particles.forEach((particle, i) => {
+
+      const linesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+
+      allParticles.forEach((particle, i) => {
         const rect1 = particle.getBoundingClientRect();
         const x1 = rect1.left + rect1.width / 2;
         const y1 = rect1.top + rect1.height / 2;
-        
-        // Connect to nearby particles
-        particles.forEach((other, j) => {
+
+        allParticles.forEach((other, j) => {
           if (i < j) {
             const rect2 = other.getBoundingClientRect();
             const x2 = rect2.left + rect2.width / 2;
             const y2 = rect2.top + rect2.height / 2;
-            
+
             const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-            
-            if (distance < 220) {
+
+            if (distance < 200) {
               const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
               line.setAttribute('x1', x1);
               line.setAttribute('y1', y1);
               line.setAttribute('x2', x2);
               line.setAttribute('y2', y2);
-              
-              // Softer opacity based on distance
-              const opacity = (1 - (distance / 220)) * 0.35;
-              line.setAttribute('stroke', `rgba(100, 160, 220, ${opacity})`);
+
+              const opacity = (1 - (distance / 200)) * 0.25;
+              line.setAttribute('stroke', `rgba(59, 130, 246, ${opacity})`);
               line.setAttribute('stroke-width', '1');
               line.setAttribute('stroke-linecap', 'round');
-              
-              // Soft glow effect
               line.style.filter = 'blur(0.3px)';
-              
-              lines.appendChild(line);
+
+              linesGroup.appendChild(line);
             }
           }
         });
       });
-      
-      svg.appendChild(lines);
+
+      svg.appendChild(linesGroup);
     }
 
-    // Very smooth animation with throttling
     let lastUpdate = 0;
-    const updateInterval = 50; // Update every 50ms for smoothness
-    
-    function animate(timestamp) {
+    const updateInterval = 60;
+
+    function animateParticles(timestamp) {
       if (timestamp - lastUpdate >= updateInterval) {
         updateLines();
         lastUpdate = timestamp;
       }
-      requestAnimationFrame(animate);
+      requestAnimationFrame(animateParticles);
     }
-    
-    // Initial render
+
     updateLines();
+    requestAnimationFrame(animateParticles);
+
+    // ==============================
+    // Typing Animation
+    // ==============================
+    const typedElement = document.getElementById('typed-text');
+    const titles = [
+      'Data Scientist',
+      'AI Engineer',
+      'Computer Vision Researcher',
+      'Deep Learning Enthusiast',
+      'Published Researcher'
+    ];
+    let titleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 80;
+
+    function typeEffect() {
+      const current = titles[titleIndex];
+
+      if (isDeleting) {
+        typedElement.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 40;
+      } else {
+        typedElement.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 80;
+      }
+
+      if (!isDeleting && charIndex === current.length) {
+        typingSpeed = 2000; // Pause at end
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        titleIndex = (titleIndex + 1) % titles.length;
+        typingSpeed = 400; // Pause before next word
+      }
+
+      setTimeout(typeEffect, typingSpeed);
+    }
+
+    if (typedElement) {
+      setTimeout(typeEffect, 800);
+    }
+
+    // ==============================
+    // Scroll-Spy Navigation
+    // ==============================
+    const sections = document.querySelectorAll('.section, .hero');
+    const navLinksAll = document.querySelectorAll('.nav-links a');
+
+    function updateActiveNav() {
+      let currentSection = '';
+      const scrollY = window.scrollY + 120;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinksAll.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSection) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    // ==============================
+    // Navbar scroll effect
+    // ==============================
+    const navbar = document.getElementById('navbar');
+
+    function handleNavbarScroll() {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      updateActiveNav();
+      handleNavbarScroll();
+    }, { passive: true });
+
+    // ==============================
+    // Mobile Hamburger Menu
+    // ==============================
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // ==============================
+    // Scroll Reveal Animations
+    // ==============================
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ==============================
+    // Animated Counter
+    // ==============================
+    const counters = document.querySelectorAll('.stat-number[data-target]');
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          const end = target.getAttribute('data-target');
+          const suffix = target.getAttribute('data-suffix') || '';
+          const prefix = target.getAttribute('data-prefix') || '';
+          const isDecimal = end.includes('.');
+          const endVal = parseFloat(end);
+          const duration = 1500;
+          const startTime = performance.now();
+
+          function updateCounter(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easeProgress = 1 - Math.pow(1 - progress, 3);
+            const current = easeProgress * endVal;
+
+            if (isDecimal) {
+              target.textContent = prefix + current.toFixed(1) + suffix;
+            } else {
+              target.textContent = prefix + Math.floor(current) + suffix;
+            }
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              target.textContent = prefix + end + suffix;
+            }
+          }
+
+          requestAnimationFrame(updateCounter);
+          counterObserver.unobserve(target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(c => counterObserver.observe(c));
+
+    // ==============================
+    // Image Slider
+    // ==============================
+    const track = document.getElementById('slider-track');
+    const prevBtn = document.getElementById('slider-prev');
+    const nextBtn = document.getElementById('slider-next');
+    const dotsContainer = document.getElementById('slider-dots');
     
-    // Start smooth animation
-    requestAnimationFrame(animate);
+    if (track && prevBtn && nextBtn && dotsContainer) {
+      const slides = Array.from(track.children);
+      let currentIndex = 0;
+      
+      // Create dots
+      slides.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.classList.add('slider-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+      });
+      
+      const dots = Array.from(dotsContainer.children);
+      
+      function goToSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        
+        currentIndex = index;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        dots.forEach(d => d.classList.remove('active'));
+        dots[currentIndex].classList.add('active');
+      }
+      
+      prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+      nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+      
+      // Optional: Auto-slide every 5 seconds
+      setInterval(() => goToSlide(currentIndex + 1), 5000);
+    }
   </script>
 </body>
 </html>
