@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,13 @@
   <meta name="keywords" content="Data Scientist, AI Engineer, Computer Vision, Deep Learning, Cambodia, Sothy Vandeth">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
+
 <body>
   <!-- Animated Background -->
   <div class="bg-gradient"></div>
@@ -45,7 +49,8 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with <a href="https://jekyllrb.com/"
+          target="_blank">Jekyll</a>.</p>
     </footer>
   </div>
 
@@ -54,7 +59,7 @@
     // Particle System (Enhanced)
     // ==============================
     const particlesContainer = document.getElementById('particles');
-    const particleCount = 45;
+    const particleCount = 50;
     const particleDataArr = [];
 
     for (let i = 0; i < particleCount; i++) {
@@ -114,16 +119,16 @@
 
             const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
-            if (distance < 200) {
+            if (distance < 250) {
               const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
               line.setAttribute('x1', x1);
               line.setAttribute('y1', y1);
               line.setAttribute('x2', x2);
               line.setAttribute('y2', y2);
 
-              const opacity = (1 - (distance / 200)) * 0.25;
+              const opacity = (1 - (distance / 250)) * 0.3;
               line.setAttribute('stroke', `rgba(59, 130, 246, ${opacity})`);
-              line.setAttribute('stroke-width', '1');
+              line.setAttribute('stroke-width', '1.5');
               line.setAttribute('stroke-linecap', 'round');
               line.style.filter = 'blur(0.3px)';
 
@@ -327,11 +332,11 @@
     const prevBtn = document.getElementById('slider-prev');
     const nextBtn = document.getElementById('slider-next');
     const dotsContainer = document.getElementById('slider-dots');
-    
+
     if (track && prevBtn && nextBtn && dotsContainer) {
       const slides = Array.from(track.children);
       let currentIndex = 0;
-      
+
       // Create dots
       slides.forEach((_, i) => {
         const dot = document.createElement('div');
@@ -340,26 +345,27 @@
         dot.addEventListener('click', () => goToSlide(i));
         dotsContainer.appendChild(dot);
       });
-      
+
       const dots = Array.from(dotsContainer.children);
-      
+
       function goToSlide(index) {
         if (index < 0) index = slides.length - 1;
         if (index >= slides.length) index = 0;
-        
+
         currentIndex = index;
         track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        
+
         dots.forEach(d => d.classList.remove('active'));
         dots[currentIndex].classList.add('active');
       }
-      
+
       prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
       nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
-      
-      // Optional: Auto-slide every 5 seconds
-      setInterval(() => goToSlide(currentIndex + 1), 5000);
+
+      // Optional: Auto-slide every 10 seconds
+      setInterval(() => goToSlide(currentIndex + 1), 10000);
     }
   </script>
 </body>
+
 </html>

@@ -4,7 +4,9 @@
    ============================================ */
 
 /* --- Reset & Base --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -90,8 +92,8 @@ a:hover {
 
 .particle {
   position: absolute;
-  width: 3px;
-  height: 3px;
+  width: 6px;
+  height: 6px;
   background: rgba(59, 130, 246, 0.5);
   border-radius: 50%;
   animation: float 40s infinite ease-in-out;
@@ -99,18 +101,23 @@ a:hover {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
     opacity: 0.4;
   }
+
   25% {
     transform: translate(var(--tx), var(--ty)) scale(1.2);
     opacity: 0.7;
   }
+
   50% {
     transform: translate(calc(var(--tx) * 0.3), calc(var(--ty) * -0.2)) scale(0.9);
     opacity: 0.3;
   }
+
   75% {
     transform: translate(calc(var(--tx) * -0.5), calc(var(--ty) * 0.4)) scale(1.1);
     opacity: 0.6;
@@ -340,8 +347,17 @@ svg.network-lines line {
 }
 
 @keyframes heroPulse {
-  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
-  50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+  }
 }
 
 .hero-profile {
@@ -364,8 +380,15 @@ svg.network-lines line {
 }
 
 @keyframes profileGlow {
-  0%, 100% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.2); }
-  50% { box-shadow: 0 0 60px rgba(59, 130, 246, 0.35); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 60px rgba(59, 130, 246, 0.35);
+  }
 }
 
 .hero-badge {
@@ -431,8 +454,15 @@ svg.network-lines line {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-description {
@@ -541,8 +571,15 @@ svg.network-lines line {
 }
 
 @keyframes scrollBounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
 }
 
 /* --- About Section --- */
@@ -630,7 +667,7 @@ svg.network-lines line {
   border-radius: var(--card-radius);
   overflow: hidden;
   aspect-ratio: 4/5;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
 }
 
 .slider-track {
@@ -1184,19 +1221,21 @@ svg.network-lines line {
 
 .contact-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 16px;
-  text-align: left;
+  text-align: center;
 }
 
 .contact-card .icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   flex-shrink: 0;
   background: rgba(59, 130, 246, 0.1);
   border: 1px solid rgba(59, 130, 246, 0.2);
@@ -1211,16 +1250,17 @@ svg.network-lines line {
 
 .contact-card h4 {
   font-family: 'Outfit', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .contact-card p {
   font-size: 0.85rem;
   color: var(--text-secondary);
   margin: 0;
+  word-break: break-word;
 }
 
 .contact-card a {
@@ -1301,22 +1341,45 @@ svg.network-lines line {
 }
 
 /* Stagger children */
-.stagger-children > * {
+.stagger-children>* {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.stagger-children.visible > *:nth-child(1) { transition-delay: 0.05s; }
-.stagger-children.visible > *:nth-child(2) { transition-delay: 0.1s; }
-.stagger-children.visible > *:nth-child(3) { transition-delay: 0.15s; }
-.stagger-children.visible > *:nth-child(4) { transition-delay: 0.2s; }
-.stagger-children.visible > *:nth-child(5) { transition-delay: 0.25s; }
-.stagger-children.visible > *:nth-child(6) { transition-delay: 0.3s; }
-.stagger-children.visible > *:nth-child(7) { transition-delay: 0.35s; }
-.stagger-children.visible > *:nth-child(8) { transition-delay: 0.4s; }
+.stagger-children.visible>*:nth-child(1) {
+  transition-delay: 0.05s;
+}
 
-.stagger-children.visible > * {
+.stagger-children.visible>*:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.stagger-children.visible>*:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+.stagger-children.visible>*:nth-child(4) {
+  transition-delay: 0.2s;
+}
+
+.stagger-children.visible>*:nth-child(5) {
+  transition-delay: 0.25s;
+}
+
+.stagger-children.visible>*:nth-child(6) {
+  transition-delay: 0.3s;
+}
+
+.stagger-children.visible>*:nth-child(7) {
+  transition-delay: 0.35s;
+}
+
+.stagger-children.visible>*:nth-child(8) {
+  transition-delay: 0.4s;
+}
+
+.stagger-children.visible>* {
   opacity: 1;
   transform: translateY(0);
 }

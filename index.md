@@ -17,7 +17,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
   </div>
 
   <p class="hero-description">
-    Building real-world AI solutions for emerging markets — specializing in Computer Vision, Deep Learning, and Data Science from Cambodia to the world.
+    Building real-world AI solutions for emerging markets, specializing in Computer Vision, Deep Learning, and Data Science from Cambodia to the world.
   </p>
 
   <div class="hero-cta">
@@ -50,7 +50,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
     <div class="about-text reveal-left">
       <p>I'm a <strong>Data Science student</strong> at the <strong>Institute of Technology of Cambodia (ITC)</strong>, pursuing a Bachelor of Engineering in Data Science. I specialize in <strong>Computer Vision</strong>, <strong>AI</strong>, and <strong>Data Analysis</strong>, and I build real-world intelligent systems focused on accessibility, automation, and practical impact for emerging markets.</p>
 
-      <p>I enjoy solving complex problems, extracting meaningful insights from data, and delivering solutions that make a tangible difference. From publishing research at international IEEE conferences to interning with government ministries — I bring both academic rigor and real-world practicality to every project.</p>
+      <p>I enjoy solving complex problems, extracting meaningful insights from data, and delivering solutions that make a tangible difference. From publishing research at international IEEE conferences to interning with government ministries, I bring both academic rigor and real-world practicality to every project.</p>
 
       <div class="about-location">
         <i class="fas fa-map-marker-alt"></i>
@@ -554,6 +554,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
     <div class="glass-card project-card">
       <h3>MoEYS Lifelong Learning — Data Analysis & Visualization</h3>
       <p>Data analysis and visualization for Cambodia's National Action Plan on Lifelong Learning at the Ministry of Education, Youth, and Sport.</p>
+      <div class="pub-meta" style="margin-top: 10px; margin-bottom: 10px;"><i class="fas fa-building"></i> Ministry of Education, Youth, and Sport</div>
       <div class="skills-group">
         <span class="skill-tag">Data Analysis</span>
         <span class="skill-tag">Data Visualization</span>
@@ -618,6 +619,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
       <div>
         <h4>Email</h4>
         <p><a href="mailto:sothyvandeth8034@gmail.com">sothyvandeth8034@gmail.com</a></p>
+        <p><a href="mailto:e20220240@dtc1.itc.edu.kh">e20220240@dtc1.itc.edu.kh</a></p>
       </div>
     </div>
 
