@@ -59,7 +59,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
 
       <div class="stats-row stagger-children">
         <div class="stat-card">
-          <span class="stat-number" data-target="2" data-suffix="+">0</span>
+          <span class="stat-number" data-target="3" data-suffix="+">0</span>
           <span class="stat-label">Publications</span>
         </div>
         <div class="stat-card">
