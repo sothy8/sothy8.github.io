@@ -82,6 +82,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
         <div class="slide"><img src="{{ '/assets/images/P4.jpeg' | relative_url }}" alt="Kuala Lumpur, Malaysia"></div>
         <div class="slide"><img src="{{ '/assets/images/P2.jpeg' | relative_url }}" alt="IEEE TIC 2026"></div>
         <div class="slide"><img src="{{ '/assets/images/P1.jpeg' | relative_url }}" alt="Singapore"></div>
+        <div class="slide"><img src="{{ '/assets/images/P5.jpeg' | relative_url }}" alt="Singapore"></div>
         <div class="slide"><img src="{{ '/assets/images/P3.jpeg' | relative_url }}" alt="Sky Explorer"></div>
       </div>
       <div class="slider-controls">
