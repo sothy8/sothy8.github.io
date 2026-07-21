@@ -245,7 +245,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
           <h3>Data Scientist Internship</h3>
           <span class="timeline-period">June 2025 – Dec 2025</span>
         </div>
-        <p class="exp-company">Ministry of Education, Youth, and Sport (MoEYS), Phnom Penh</p>
+        <p class="exp-company">Ministry of Education, Youth, and Sports (MoEYS), Phnom Penh</p>
         <p class="exp-description">Conducted data analysis and visualization for Cambodia's National Action Plan on Lifelong Learning. Delivered data-driven insights to support national education policy development and implementation.</p>
         <div class="skills-group">
           <span class="skill-tag">Data Analysis</span>
@@ -458,7 +458,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
         <h3>Enhancing Deep Learning-Based Air Pollution Prediction Through Dropout Regularization</h3>
         <div class="pub-meta"><i class="fas fa-award"></i> AIoTC 2026 · Singapore (Aug 7-9, 2026)</div>
         <p class="pub-description">Accepted for oral presentation. Published by IEEE and submitted to EI Compendex & Scopus.</p>
-        <p class="pub-authors"><strong>Authors:</strong>Sothy Vandeth, Co-authors TBD</p>
+        <p class="pub-authors"><strong>Authors:</strong> Sothy Vandeth, Kimlong Ngin, Pakrigna Long</p>
         <div class="pub-keywords skills-group">
           <span class="skill-tag">Deep Learning</span>
           <span class="skill-tag">Air Pollution Prediction</span>
