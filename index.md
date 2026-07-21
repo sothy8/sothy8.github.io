@@ -59,7 +59,7 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
 
       <div class="stats-row stagger-children">
         <div class="stat-card">
-          <span class="stat-number" data-target="3" data-suffix="+">0</span>
+          <span class="stat-number" data-target="3" data-suffix="">0</span>
           <span class="stat-label">Publications</span>
         </div>
         <div class="stat-card">
@@ -227,13 +227,14 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
           <span class="timeline-period">July 2026 – Present</span>
         </div>
         <p class="exp-company">Ministry of Post and Telecommunications (MPTC), Phnom Penh</p>
-        <p class="exp-description">Working under Department of National Information Infrastructure and Video Conference of the Royal Government.</p>
+        <p class="exp-description">Working on a project of National Public Service Connectivity Intelligence Platform under the Department of National Information Infrastructure and Video Conference of the Ministry of Posts and Telecommunications (MPTC)</p>
         <div class="skills-group">
-          <span class="skill-tag">Large Language Models (LLM)</span>
-          <span class="skill-tag">NLP</span>
           <span class="skill-tag">Data Engineer</span>
+          <span class="skill-tag">AI Engineer</span>
+          <span class="skill-tag">Machine Learning</span>
           <span class="skill-tag">Data Analysis</span>
-          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">Network</span>
+          <span class="skill-tag">Cybersecurity</span>
         </div>
       </div>
     </div>
