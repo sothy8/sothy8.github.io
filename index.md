@@ -543,13 +543,25 @@ title: Sothy VANDETH — Data Scientist & AI Engineer
     </div>
 
     <div class="glass-card project-card">
-      <h3>Face & Activity Recognition</h3>
-      <p>Face and activity recognition system combining InsightFace for face identification and CLIP for zero-shot activity understanding.</p>
+      <h3>Driver Attention Monitoring System</h3>
+      <p>A real-time AI-powered driver monitoring system that detects fatigue, drowsiness, and distraction using computer vision and deep learning. The system provides visual alerts, fatigue analytics, and emergency notifications to prevent drowsy driving accidents.</p>
       <div class="skills-group">
         <span class="skill-tag">InsightFace</span>
         <span class="skill-tag">CLIP</span>
         <span class="skill-tag">Face Recognition</span>
         <span class="skill-tag">Python</span>
+      </div>
+    </div>
+
+    <div class="glass-card project-card">
+      <h3>Face & Activity Recognition</h3>
+      <p>Face and activity recognition system combining InsightFace for face identification and CLIP for zero-shot activity understanding.</p>
+      <div class="skills-group">
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">Deep Learning</span>
+        <span class="skill-tag">AI</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Data Analysis</span>
       </div>
     </div>
 
