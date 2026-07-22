@@ -237,8 +237,17 @@ button {
 }
 
 @keyframes pulse-dot {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.4); opacity: 0.6; }
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
 }
 
 .logo-accent {
@@ -420,13 +429,33 @@ button {
   transform: translateX(0);
 }
 
-.mobile-menu.active .mobile-menu-links li:nth-child(1) { transition-delay: 0.06s; }
-.mobile-menu.active .mobile-menu-links li:nth-child(2) { transition-delay: 0.11s; }
-.mobile-menu.active .mobile-menu-links li:nth-child(3) { transition-delay: 0.16s; }
-.mobile-menu.active .mobile-menu-links li:nth-child(4) { transition-delay: 0.21s; }
-.mobile-menu.active .mobile-menu-links li:nth-child(5) { transition-delay: 0.26s; }
-.mobile-menu.active .mobile-menu-links li:nth-child(6) { transition-delay: 0.31s; }
-.mobile-menu.active .mobile-menu-links li:nth-child(7) { transition-delay: 0.36s; }
+.mobile-menu.active .mobile-menu-links li:nth-child(1) {
+  transition-delay: 0.06s;
+}
+
+.mobile-menu.active .mobile-menu-links li:nth-child(2) {
+  transition-delay: 0.11s;
+}
+
+.mobile-menu.active .mobile-menu-links li:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+.mobile-menu.active .mobile-menu-links li:nth-child(4) {
+  transition-delay: 0.21s;
+}
+
+.mobile-menu.active .mobile-menu-links li:nth-child(5) {
+  transition-delay: 0.26s;
+}
+
+.mobile-menu.active .mobile-menu-links li:nth-child(6) {
+  transition-delay: 0.31s;
+}
+
+.mobile-menu.active .mobile-menu-links li:nth-child(7) {
+  transition-delay: 0.36s;
+}
 
 .mobile-link {
   display: flex;
@@ -641,10 +670,10 @@ body.mobile-menu-open {
 
 .polaroid-frame {
   background: #12070A;
-  padding: 1.1rem 1.1rem 3.5rem 1.1rem;
+  padding: 0 0 3.5rem 0;
   border-radius: 14px;
   box-shadow: var(--shadow-polaroid);
-  transform: rotate(-3deg);
+  /* transform: rotate(-3deg); */
   transition: var(--transition-bounce);
   position: relative;
   border: 1px solid var(--border-light);
@@ -658,16 +687,15 @@ body.mobile-menu-open {
 
 .polaroid-img-box {
   width: 100%;
-  aspect-ratio: 3/4;
   height: auto;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 14px 14px 0 0;
 }
 
 .polaroid-img-box img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .polaroid-caption {
@@ -700,7 +728,7 @@ body.mobile-menu-open {
 }
 
 .floating-card.card-top {
-  top: 5%;
+  top: -30px;
   right: -5%;
   animation-delay: 0s;
 }
@@ -754,7 +782,7 @@ body.mobile-menu-open {
 .about-slider-container {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: auto;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: var(--shadow-polaroid);
@@ -787,6 +815,8 @@ body.mobile-menu-open {
 }
 
 .about-slide.active {
+  position: relative;
+  height: auto;
   opacity: 1;
   visibility: visible;
   transform: scale(1);
@@ -794,9 +824,9 @@ body.mobile-menu-open {
 
 .about-slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 18px;
+  height: auto;
+  display: block;
+  border-radius: 24px;
   cursor: pointer;
 }
 
@@ -1804,7 +1834,7 @@ footer {
 /* --------------------------------------------------------------------------
    12. Responsive Breakpoints
    -------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .nav-links {
     display: none;
   }
@@ -1812,6 +1842,9 @@ footer {
   .nav-mobile-toggle {
     display: flex;
   }
+}
+
+@media (max-width: 1024px) {
 
   .hero-grid,
   .about-grid,
@@ -1828,10 +1861,6 @@ footer {
 
   .section-title {
     font-size: 2.3rem;
-  }
-
-  .about-slider-container {
-    height: 520px;
   }
 
   .gallery-grid {
@@ -1898,22 +1927,18 @@ footer {
 
   /* Keep floating cards contained on mobile */
   .floating-card.card-top {
-    right: 0;
-    top: -10px;
+    right: -40px;
+    top: -30px;
   }
 
   .floating-card.card-bottom {
-    left: 0;
-    bottom: -10px;
+    left: -40px;
+    bottom: -60px;
   }
 
-  .polaroid-img-box {
-    height: 360px;
-  }
+  .polaroid-img-box {}
 
-  .about-slider-container {
-    height: 400px;
-  }
+  .about-slider-container {}
 
   .section-title {
     font-size: 1.9rem;
@@ -2023,13 +2048,9 @@ footer {
     max-width: 100%;
   }
 
-  .polaroid-img-box {
-    height: 290px;
-  }
+  .polaroid-img-box {}
 
-  .about-slider-container {
-    height: 300px;
-  }
+  .about-slider-container {}
 
   .section-title {
     font-size: 1.55rem;
