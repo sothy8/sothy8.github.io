@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sothy VANDETH — Data Scientist &amp; AI Engineer</title>
+  <meta name="description"
+    content="Portfolio of Sothy VANDETH, a Data Scientist & AI Engineer specializing in Computer Vision, Deep Learning, and NLP from Cambodia. IEEE-published researcher at ITC.">
+  <meta name="keywords"
+    content="Sothy Vandeth, Sothy VANDETH, Data Scientist, AI Engineer, Computer Vision, Deep Learning, NLP, ITC Cambodia, IEEE, Machine Learning">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Animated Interactive Network Lines Background Canvas -->
+  <canvas id="network-canvas"></canvas>
+
+  <!-- ==========================================
+       Header / Navbar
+       ========================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        Sothy <span>VANDETH</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-btn">
+        <i class="fa-solid fa-rocket"></i> Let's Connect
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-microchip"></i> Data Scientist &amp; AI Engineer
+        </div>
+        <h1 class="hero-title">
+          Building Real-World AI for <span class="gradient-text">Emerging Markets</span>.
+        </h1>
+        <p class="hero-description">
+          IEEE-published researcher specializing in Computer Vision, Deep Learning, and NLP — crafting intelligent
+          systems that create tangible impact from Cambodia to the world.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            Explore My Work <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            Get In Touch <i class="fa-regular fa-paper-plane"></i>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">3</span>
+            <span class="stat-label">IEEE Papers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="11">11</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.0</span>
+            <span class="stat-label">GPA / 4.0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">IELTS 6</span>
+            <span class="stat-label">English</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="polaroid-wrapper">
+          <div class="polaroid-frame">
+            <div class="polaroid-img-box">
+              <img src="assets/images/VST.jpg" alt="Sothy VANDETH — Data Scientist & AI Engineer">
+            </div>
+            <div class="polaroid-caption">Sothy VANDETH 🤖</div>
+          </div>
+          <!-- Floating Badge Cards -->
+          <div class="floating-card card-top">
+            <div class="floating-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="floating-info">
+              <h4>AI Researcher</h4>
+              <p>CV • NLP • Deep Learning</p>
+            </div>
+          </div>
+          <div class="floating-card card-bottom">
+            <div class="floating-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="floating-info">
+              <h4>IEEE Published</h4>
+              <p>3 International Papers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       About Me Section
+       ========================================== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-slider-container">
+          <div class="about-slider-track" id="about-slider-track">
+            <div class="about-slide active"><img src="assets/images/P4.jpeg"
+                alt="IEEE TIC 2026 — Kuala Lumpur, Malaysia">
+            </div>
+            <div class="about-slide"><img src="assets/images/P2.jpeg" alt="IEEE Conference Presentation"></div>
+            <div class="about-slide"><img src="assets/images/P1.jpeg" alt="Singapore Tech Summit"></div>
+            <div class="about-slide"><img src="assets/images/P3.jpeg" alt="Sky Explorer AI Project"></div>
+            <div class="about-slide"><img src="assets/images/P5.jpeg" alt="Global Research Exchange"></div>
+            <div class="about-slide"><img src="assets/images/P6.jpeg" alt="MPTC Government Internship"></div>
+            <div class="about-slide"><img src="assets/images/P7.jpeg" alt="MoEYS Data Analytics Project"></div>
+            <div class="about-slide"><img src="assets/images/P8.jpeg" alt="AI Club Workshops at ITC"></div>
+            <div class="about-slide"><img src="assets/images/P9.jpeg" alt="Community & Volunteering Events"></div>
+            <div class="about-slide"><img src="assets/images/P10.jpeg" alt="Community & Volunteering Events"></div>
+          </div>
+          <!-- Navigation Controls -->
+          <button class="slider-btn prev-btn" id="slider-prev" aria-label="Previous Slide"><i
+              class="fa-solid fa-chevron-left"></i></button>
+          <button class="slider-btn next-btn" id="slider-next" aria-label="Next Slide"><i
+              class="fa-solid fa-chevron-right"></i></button>
+          <!-- Dots Indicator -->
+          <div class="slider-dots" id="slider-dots"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-tag"><i class="fa-solid fa-user-astronaut"></i> About Me</div>
+          <h2 class="section-title">Hello, I'm <span class="gradient-text">Sothy VANDETH</span></h2>
+          <div class="about-bio">
+            <p>
+              I am a <strong>Data Science student</strong> at the <strong>Institute of Technology of Cambodia
+                (ITC)</strong>,
+              pursuing a Bachelor of Engineering in Data Science with a perfect <strong>GPA of 4.0/4.0</strong>.
+              I specialize in <strong>Computer Vision</strong>, <strong>Deep Learning</strong>, and <strong>AI
+                Engineering</strong>,
+              building real-world intelligent systems focused on accessibility, automation, and practical impact for
+              emerging markets.
+            </p>
+            <p>
+              From publishing research at international IEEE conferences to interning with government ministries, I
+              bring both academic rigor and real-world practicality to every project — from Cambodia to the world.
+            </p>
+          </div>
+
+          <h3 class="strengths-title">Personal Strengths 🔥</h3>
+          <div class="strengths-grid">
+            <div class="strength-card">
+              <div class="strength-icon"><i class="fa-solid fa-brain"></i></div>
+              <h4>AI-Driven</h4>
+              <p>Translates cutting-edge research into deployable intelligent systems for real-world problems.</p>
+            </div>
+            <div class="strength-card">
+              <div class="strength-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <h4>Data-Driven</h4>
+              <p>Applies analytical rigor to national policy challenges, delivering actionable insights from complex
+                data.</p>
+            </div>
+            <div class="strength-card">
+              <div class="strength-icon"><i class="fa-solid fa-users"></i></div>
+              <h4>Community Builder</h4>
+              <p>Events Coordinator at ITC's AI Club, fostering a thriving AI community across Cambodia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Education Section (Separated)
+       ========================================== -->
+  <section id="education" class="projects">
+    <div class="container">
+      <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+      <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+      <p class="section-subtitle">Rigorous academic foundations at Cambodia's premier technical institute.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>Bachelor of Engineering in Data Science</h3>
+            <span class="timeline-period">2022 – Present</span>
+          </div>
+          <p class="timeline-institution">Institute of Technology of Cambodia (ITC), Phnom Penh</p>
+          <p class="timeline-description">Department of Applied Mathematics and Statistics</p>
+          <span class="gpa-badge"><i class="fa-solid fa-star"></i> GPA 4.0 / 4.0</span>
+          <div class="timeline-details" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.95rem;">
+            <p><strong>Focus Areas:</strong> Computer Vision, Deep Learning, Data Analysis, Statistics, AI Engineering
+            </p>
+            <p><strong>Relevant Coursework:</strong> Machine Learning, Statistical Methods, Data Structures, Algorithms,
+              Linear Algebra, Probability Theory</p>
+          </div>
+          <div class="skills-group" style="margin-top: 1rem;">
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Statistics</span>
+            <span class="skill-tag">Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>General English Program</h3>
+            <span class="timeline-period">2024 – 2025</span>
+          </div>
+          <p class="timeline-institution">Australian Centre for Education (ACE), Phnom Penh</p>
+          <p class="timeline-description">IELTS 6.0 Achievement</p>
+          <div class="timeline-details" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.95rem;">
+            <p><strong>Skills Developed:</strong> Academic English, Professional Communication, Technical Writing</p>
+          </div>
+          <div class="skills-group" style="margin-top: 1rem;">
+            <span class="skill-tag">Academic English</span>
+            <span class="skill-tag">IELTS 6.0</span>
+            <span class="skill-tag">Technical Writing</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <h3>High School Diploma</h3>
+            <span class="timeline-period">2020 – 2022</span>
+          </div>
+          <p class="timeline-institution">Toul Tom Poung High School, Phnom Penh</p>
+          <p class="timeline-description">Science Track</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Research Publications Section (Separated)
+       ========================================== -->
+  <section id="publications" class="projects" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-tag"><i class="fa-solid fa-file-lines"></i> Publications</div>
+      <h2 class="section-title">Research <span class="gradient-text">Papers</span></h2>
+      <p class="section-subtitle">Published research at international IEEE conferences, pushing the boundaries of AI in
+        Southeast Asia.</p>
+
+      <div class="pub-list">
+        <div class="pub-card">
+          <h3>RAG-Powered Khmer Audio Learning &amp; AI Conversational Tutor for Inclusive Education</h3>
+          <div class="pub-meta"><i class="fa-solid fa-award"></i> IEEE Technology &amp; Innovation Conference (TIC 2026)
+            · Kuala Lumpur, Malaysia</div>
+          <p class="pub-description">Introduces a RAG-powered system for Khmer audio-based learning and AI
+            conversational tutoring to support inclusive education in Cambodia.</p>
+          <p class="pub-authors"><strong>Authors:</strong> Sothy Vandeth, Co-authors TBD</p>
+          <p class="pub-supervisor"><strong>Under Supervision of:</strong> Asst. Prof. Dr. Sokkhey PHAUK and Dr. Sothea
+            HAS</p>
+          <div class="skills-group" style="margin-top: 1rem;">
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Audio AI</span>
+            <span class="skill-tag">Khmer Language</span>
+            <span class="skill-tag">Inclusive Education</span>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <h3>Automatic License Plate Recognition in Cambodia (ALPRC) Using Computer Vision &amp; Deep Learning</h3>
+          <div class="pub-meta"><i class="fa-solid fa-award"></i> ICAICI 2026 · Kuala Lumpur, Malaysia</div>
+          <p class="pub-description">Proposes a complete pipeline for detecting and recognizing Cambodian license plates
+            using Computer Vision and Deep Learning techniques.</p>
+          <p class="pub-authors"><strong>Authors:</strong> Sothy Vandeth, Co-authors TBD</p>
+          <p class="pub-supervisor"><strong>Under Supervision of:</strong> Dr. Sothea HAS</p>
+          <div class="skills-group" style="margin-top: 1rem;">
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">OCR</span>
+            <span class="skill-tag">License Plate Recognition</span>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <h3>Enhancing Deep Learning-Based Air Pollution Prediction Through Dropout Regularization</h3>
+          <div class="pub-meta"><i class="fa-solid fa-award"></i> AIoTC 2026 · Singapore (Aug 7–9, 2026)</div>
+          <p class="pub-description">Accepted for oral presentation. Published by IEEE and submitted to EI Compendex
+            &amp; Scopus.</p>
+          <p class="pub-authors"><strong>Authors:</strong> Sothy Vandeth, Kimlong Ngin, Pakrigna Long</p>
+          <div class="skills-group" style="margin-top: 1rem;">
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Air Pollution Prediction</span>
+            <span class="skill-tag">Dropout Regularization</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-top: 2.5rem; font-style: italic; color: var(--text-muted);">
+        More publications coming soon as research continues.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Work Experience Section
+       ========================================== -->
+  <section id="experience" class="projects" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience</div>
+      <h2 class="section-title">Professional &amp; <span class="gradient-text">Volunteer Experience</span></h2>
+      <p class="section-subtitle">Hands-on impact at national government ministries, academic clubs, and international
+        programs.</p>
+
+      <!-- Professional Experience -->
+      <div class="project-card" style="margin-top: 3rem;">
+        <div class="project-header">
+          <div>
+            <h3 class="project-company">Ministry of Post &amp; Telecommunications (MPTC)</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem;">Data Scientist Internship</p>
+          </div>
+          <span class="project-role-badge"><i class="fa-solid fa-bolt"></i> July 2026 – Present</span>
+        </div>
+
+        <div class="project-grid">
+          <div>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.8rem;">
+              Working on the <strong style="color: var(--text-main);">National Public Service Connectivity
+                Intelligence Platform (NPS-CIP)</strong> under the Dept. of National Information Infrastructure and
+              Video Conference of the Royal Government of Cambodia.
+            </p>
+            <div class="project-bullets">
+              <div class="bullet-item">
+                <div class="bullet-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="bullet-content">
+                  <strong>Role:</strong>
+                  <p> Data Engineer &amp; AI Engineer building an intelligent national connectivity platform.</p>
+                </div>
+              </div>
+              <div class="bullet-item">
+                <div class="bullet-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="bullet-content">
+                  <strong>Focus Areas:</strong>
+                  <p> Machine Learning, Network Analytics, Cybersecurity, and AI-driven infrastructure monitoring.</p>
+                </div>
+              </div>
+            </div>
+            <div class="skills-group" style="margin-top: 1.2rem;">
+              <span class="skill-tag">Data Engineering</span>
+              <span class="skill-tag">AI Engineering</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Network Analytics</span>
+              <span class="skill-tag">Cybersecurity</span>
+            </div>
+          </div>
+
+          <div class="project-visual-box">
+            <img src="assets/images/P6.jpeg" alt="MPTC Internship — National Public Service Platform">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3 class="project-company">Ministry of Education, Youth &amp; Sport (MoEYS)</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem;">Data Scientist Internship</p>
+          </div>
+          <span class="project-role-badge"><i class="fa-solid fa-landmark"></i> June – Dec 2025</span>
+        </div>
+
+        <div class="project-grid">
+          <div>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.8rem;">
+              Conducted <strong style="color: var(--text-main);">data analysis and visualization</strong> for Cambodia's
+              National Action Plan on Lifelong Learning — delivering data-driven insights to support national
+              education policy development and implementation.
+            </p>
+            <div class="project-bullets">
+              <div class="bullet-item">
+                <div class="bullet-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <div class="bullet-content">
+                  <strong>Data Analysis:</strong>
+                  <p> Extracted, cleaned, and modeled national education datasets using Python and statistical methods.
+                  </p>
+                </div>
+              </div>
+              <div class="bullet-item">
+                <div class="bullet-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <div class="bullet-content">
+                  <strong>Visualization:</strong>
+                  <p> Built interactive dashboards supporting Cambodia's Lifelong Learning policy framework.</p>
+                </div>
+              </div>
+            </div>
+            <div class="skills-group" style="margin-top: 1.2rem;">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Data Analysis</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">Education Policy</span>
+              <span class="skill-tag">Statistics</span>
+            </div>
+          </div>
+
+          <div class="project-visual-box">
+            <img src="assets/images/P7.jpeg" alt="MoEYS Data Science Internship">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3 class="project-company">Computer Vision &amp; AI Club (ITC-AMS)</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem;">Events Coordinator</p>
+          </div>
+          <span class="project-role-badge"><i class="fa-solid fa-users"></i> May 2025 – Present</span>
+        </div>
+
+        <div class="project-grid">
+          <div>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.8rem;">
+              Organizing and coordinating events for the Computer Vision and Artificial Intelligence Club at ITC's
+              Dept. of Applied Mathematics and Statistics — building Cambodia's next generation of AI engineers.
+            </p>
+            <div class="project-bullets">
+              <div class="bullet-item">
+                <div class="bullet-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="bullet-content">
+                  <strong>Event Management:</strong>
+                  <p> Plan, coordinate, and execute technical workshops, seminars, and AI competitions.</p>
+                </div>
+              </div>
+              <div class="bullet-item">
+                <div class="bullet-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="bullet-content">
+                  <strong>Community Building:</strong>
+                  <p> Growing the AI research community across ITC and the broader Cambodian tech ecosystem.</p>
+                </div>
+              </div>
+            </div>
+            <div class="skills-group" style="margin-top: 1.2rem;">
+              <span class="skill-tag">Event Management</span>
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Team Coordination</span>
+              <span class="skill-tag">AI Community</span>
+            </div>
+          </div>
+
+          <div class="project-visual-box">
+            <img src="assets/images/P11.jpeg" alt="Computer Vision & AI Club ITC Events">
+          </div>
+        </div>
+      </div>
+
+      <!-- Volunteer Experience -->
+      <h3 class="strengths-title" style="margin-top: 3.5rem; margin-bottom: 1rem;">Volunteer Experience 🤝</h3>
+      <div class="volunteer-grid">
+        <div class="volunteer-card">
+          <span class="timeline-period" style="display: inline-block; margin-bottom: 0.7rem;">Apr 11–19, 2026</span>
+          <h4>Volunteer</h4>
+          <p class="org">Nokor Sankranta 2026, Phnom Penh</p>
+          <p>Supported event operations and community engagement for Cambodia's traditional New Year celebration in the
+            capital city.</p>
+        </div>
+        <div class="volunteer-card">
+          <span class="timeline-period" style="display: inline-block; margin-bottom: 0.7rem;">Jul 9–10, 2025</span>
+          <h4>Master of Ceremonies (MC)</h4>
+          <p class="org">Defense Day, Dept. of Applied Mathematics &amp; Statistics, ITC</p>
+          <p>Served as MC facilitating student project defense presentations and maintaining event flow.</p>
+        </div>
+        <div class="volunteer-card">
+          <span class="timeline-period" style="display: inline-block; margin-bottom: 0.7rem;">Apr 12–17, 2025</span>
+          <h4>Volunteer</h4>
+          <p class="org">Angkor Sankranta 2025, Siem Reap</p>
+          <p>Contributed to Cambodia's traditional New Year celebration, supporting cultural event activities and
+            visitor services.</p>
+        </div>
+        <div class="volunteer-card">
+          <span class="timeline-period" style="display: inline-block; margin-bottom: 0.7rem;">Jul 2024 – Jan 2025</span>
+          <h4>Volunteer</h4>
+          <p class="org">AIESEC in Cambodia</p>
+          <p>Incoming Global Teacher &amp; International Relations Team — facilitating cultural exchange and supporting
+            international volunteers.</p>
+        </div>
+        <div class="volunteer-card">
+          <span class="timeline-period" style="display: inline-block; margin-bottom: 0.7rem;">Dec 19–22, 2024</span>
+          <h4>Event Facilitation Team</h4>
+          <p class="org">Cambodia Book Fair 2024, Phnom Penh</p>
+          <p>Supported logistics, visitor engagement, and operations at one of Cambodia's largest annual book fairs.</p>
+        </div>
+        <div class="volunteer-card">
+          <span class="timeline-period" style="display: inline-block; margin-bottom: 0.7rem;">Jun 23, 2023</span>
+          <h4>Student Presenter</h4>
+          <p class="org">ITC-Sophia-MJIIT Exchange Program</p>
+          <p>Selected to represent ITC in an international academic exchange between Cambodia, Japan (Sophia
+            University), and Malaysia (MJIIT).</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Featured Projects Section (All 11 Projects)
+       ========================================== -->
+  <section id="projects" class="skills">
+    <div class="container">
+      <div class="section-tag"><i class="fa-solid fa-diagram-project"></i> Projects</div>
+      <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+      <p class="section-subtitle">Real-world AI solutions from license plate recognition to intelligent tutoring
+        systems.</p>
+
+      <!-- Metrics Banner -->
+      <div class="metrics-banner" style="margin-bottom: 3rem;">
+        <div class="metric-box">
+          <h3 class="metric-number">11</h3>
+          <p>Total Projects</p>
+        </div>
+        <div class="metric-box">
+          <h3 class="metric-number">3</h3>
+          <p>IEEE Papers</p>
+        </div>
+        <div class="metric-box">
+          <h3 class="metric-number">2</h3>
+          <p>Gov. Internships</p>
+        </div>
+        <div class="metric-box">
+          <h3 class="metric-number">4.0</h3>
+          <p>GPA / 4.0</p>
+        </div>
+      </div>
+
+      <div class="projects-grid-multi">
+
+        <div class="project-mini-card">
+          <h3>Cambodian License Plate Recognition System</h3>
+          <div class="pub-meta" style="margin-top: 5px; margin-bottom: 10px;"><i class="fa-solid fa-file-alt"></i>
+            ICAICI 2026</div>
+          <p>Automatic License Plate Recognition (ALPRC) pipeline for Cambodian plates using Computer Vision and Deep
+            Learning.</p>
+          <div class="skills-group">
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">OCR</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>Khmer Audio Learning &amp; AI Conversational Tutor</h3>
+          <div class="pub-meta" style="margin-top: 5px; margin-bottom: 10px;"><i class="fa-solid fa-file-alt"></i> IEEE
+            TIC 2026</div>
+          <p>RAG-powered intelligent Khmer audio-based learning and conversational tutoring system designed for
+            inclusive education.</p>
+          <div class="skills-group">
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Audio AI</span>
+            <span class="skill-tag">Khmer Language</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>Real-Time Grocery Sales Data Pipeline &amp; AI Analytics</h3>
+          <p>End-to-end real-time data pipeline for grocery sales with an AI analytics layer for intelligent,
+            data-driven business decisions.</p>
+          <div class="skills-group">
+            <span class="skill-tag">Data Pipeline</span>
+            <span class="skill-tag">Real-Time Systems</span>
+            <span class="skill-tag">AI Analytics</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>Product Placement Optimization — GNN + RAG Graph</h3>
+          <p>Uses Graph Neural Networks as the reasoning brain of a RAG graph to optimize product placement on retail
+            shelves through spatial graph reasoning.</p>
+          <div class="skills-group">
+            <span class="skill-tag">GNN</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Graph AI</span>
+            <span class="skill-tag">Retail Optimization</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>Eyes Calibration and Tracking System</h3>
+          <p>Computer Vision-based eye calibration and tracking system for accurate gaze estimation and
+            accessibility-focused applications.</p>
+          <div class="skills-group">
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Eye Tracking</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>Driver Attention Monitoring System</h3>
+          <p>A real-time AI-powered driver monitoring system that detects fatigue, drowsiness, and distraction using
+            computer vision and deep learning. The system provides visual alerts, fatigue analytics, and emergency
+            notifications to prevent drowsy driving accidents.</p>
+          <div class="skills-group">
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">AI</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>Face &amp; Activity Recognition</h3>
+          <p>Face and activity recognition system combining InsightFace for face identification and CLIP for zero-shot
+            activity understanding.</p>
+          <div class="skills-group">
+            <span class="skill-tag">InsightFace</span>
+            <span class="skill-tag">CLIP</span>
+            <span class="skill-tag">Face Recognition</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>MoEYS Lifelong Learning — Data Analysis &amp; Visualization</h3>
+          <p>Data analysis and visualization for Cambodia's National Action Plan on Lifelong Learning at the Ministry of
+            Education, Youth, and Sport.</p>
+          <div class="pub-meta" style="margin-top: 10px; margin-bottom: 10px;"><i class="fa-solid fa-building"></i>
+            Ministry of Education, Youth, and Sport</div>
+          <div class="skills-group">
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">Education Policy</span>
+            <span class="skill-tag">MoEYS</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>Power BI-Based Analytics Dashboard for PPSHV Expressway Operations</h3>
+          <p>Interactive analytics dashboard designed to optimize operations on the Phnom Penh-Sihanoukville (PPSHV)
+            Expressway.</p>
+          <p class="pub-supervisor" style="margin-top: 10px; font-size: 0.88em;"><strong>Under Supervision of:</strong>
+            Asst. Prof. Dr. PHAUK Sokkhey | Mr. TOUCH Sopheak</p>
+          <div class="skills-group" style="margin-top: 15px;">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Data Analytics</span>
+            <span class="skill-tag">Dashboard</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>National Public Service Connectivity Intelligence Platform (NPS-CIP)</h3>
+          <div class="pub-meta" style="margin-top: 10px; margin-bottom: 10px;"><i class="fa-solid fa-building"></i>
+            Ministry of Post and Telecommunications</div>
+          <p>Developed for the Department of National Information Infrastructure and Video Conference of the Royal
+            Government.</p>
+          <div class="skills-group" style="margin-top: 15px;">
+            <span class="skill-tag">Data Intelligence</span>
+            <span class="skill-tag">Platform Dev</span>
+            <span class="skill-tag">Government Tech</span>
+          </div>
+        </div>
+
+        <div class="project-mini-card">
+          <h3>Building a Robust Part-of-Speech Tagger Using Hidden Markov Models</h3>
+          <p>Natural Language Processing project focused on creating an accurate Part-of-Speech (POS) tagger based on
+            Hidden Markov Models.</p>
+          <div class="skills-group" style="margin-top: 15px;">
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Hidden Markov Models</span>
+            <span class="skill-tag">POS Tagging</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="text-align: center; margin-top: 3rem; font-style: italic; color: var(--text-muted);">
+        <em>View more projects on <a href="https://github.com/sothy8" target="_blank" style="color: #D60024;"><i
+              class="fa-brands fa-github"></i> github.com/sothy8</a></em>
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Technical Skills Section
+       ========================================== -->
+  <section class="skills" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-tag"><i class="fa-solid fa-bolt"></i> Arsenal</div>
+      <h2 class="section-title">Technical &amp; <span class="gradient-text">Strategic Arsenal</span></h2>
+      <p class="section-subtitle">A powerful blend of AI research expertise and practical engineering capabilities.</p>
+
+      <div class="skills-wrapper">
+        <!-- Column 1: AI & ML -->
+        <div class="skills-column">
+          <h3 class="skills-column-title">
+            <i class="fa-solid fa-robot"></i> AI &amp; Machine Learning
+          </h3>
+          <div class="skills-pills">
+            <span class="skill-pill"><i class="fa-solid fa-eye"></i> Computer Vision (OpenCV, YOLO)</span>
+            <span class="skill-pill"><i class="fa-solid fa-brain"></i> Deep Learning (PyTorch, TensorFlow)</span>
+            <span class="skill-pill"><i class="fa-solid fa-comment-dots"></i> NLP &amp; RAG Systems</span>
+            <span class="skill-pill"><i class="fa-solid fa-project-diagram"></i> Graph Neural Networks (GNN)</span>
+            <span class="skill-pill"><i class="fa-solid fa-circle-nodes"></i> Face Recognition (InsightFace)</span>
+            <span class="skill-pill"><i class="fa-solid fa-chart-simple"></i> Machine Learning (Scikit-learn)</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Data & Engineering -->
+        <div class="skills-column">
+          <h3 class="skills-column-title">
+            <i class="fa-solid fa-database"></i> Data Engineering &amp; Tools
+          </h3>
+          <div class="skills-pills">
+            <span class="skill-pill"><i class="fa-brands fa-python"></i> Python (Expert)</span>
+            <span class="skill-pill"><i class="fa-solid fa-table-cells"></i> Data Analysis (Pandas, NumPy)</span>
+            <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Power BI &amp; Visualization</span>
+            <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL &amp; Data Pipelines</span>
+            <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git &amp; Version Control</span>
+            <span class="skill-pill"><i class="fa-solid fa-language"></i> Khmer / English / French</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Photo Gallery Section
+       ========================================== -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-tag"><i class="fa-solid fa-camera"></i> Visual Gallery</div>
+      <h2 class="section-title">Moments &amp; <span class="gradient-text">Memories</span></h2>
+      <p class="section-subtitle">From IEEE conferences in Kuala Lumpur &amp; Singapore to community events across
+        Cambodia.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/VST.jpg" alt="Sothy VANDETH">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">Sothy Vandeth 👤</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P1.jpeg" alt="Singapore — AIoTC 2026">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">Singapore 🦁</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P2.jpeg" alt="IEEE TIC 2026 — Kuala Lumpur">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">IEEE TIC 2026 🏆</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P3.jpeg" alt="Sky Explorer">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">Sky Explorer ✈️</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P4.jpeg" alt="Kuala Lumpur — Malaysia">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">Kuala Lumpur 🌆</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P5.jpeg" alt="Singapore Research Trip">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">Solo Trip 🏞️</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P6.jpeg" alt="MPTC Internship">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">Solo Trip 🌌</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P7.jpeg" alt="MoEYS Internship">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">MoEYS Internship 📊</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P8.jpeg" alt="AI Club Events ITC">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">Vietnam Trip 🤖</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-img-wrapper">
+            <img src="assets/images/P9.jpeg" alt="Community & Volunteering">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">Community Work 🤝</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Contact Section
+       ========================================== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-grid">
+          <div>
+            <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</div>
+            <h2 class="section-title">Let's Build Something <span class="gradient-text">Impactful</span> Together.</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">
+              Open to internships, research collaborations, and exciting AI/Data Science projects.
+              Feel free to reach out anytime to discuss partnerships or opportunities.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-details">
+                  <h5>Primary Email</h5>
+                  <a href="mailto:sothyvandeth8034@gmail.com">sothyvandeth8034@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="sothyvandeth8034@gmail.com"><i class="fa-regular fa-copy"></i>
+                  Copy</button>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-details">
+                  <h5>Academic Email</h5>
+                  <a href="mailto:e20220240@dtc1.itc.edu.kh">e20220240@dtc1.itc.edu.kh</a>
+                </div>
+                <button class="copy-btn" data-copy="e20220240@dtc1.itc.edu.kh"><i class="fa-regular fa-copy"></i>
+                  Copy</button>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-details">
+                  <h5>Phone / Telegram</h5>
+                  <a href="tel:+85512628034">+855 12 628 034 / +855 16 202 309</a>
+                </div>
+                <button class="copy-btn" data-copy="+855 12 628 034"><i class="fa-regular fa-copy"></i> Copy</button>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="contact-details">
+                  <h5>GitHub</h5>
+                  <a href="https://github.com/sothy8" target="_blank" rel="noopener">github.com/sothy8</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="contact-details">
+                  <h5>LinkedIn</h5>
+                  <a href="https://www.linkedin.com/in/sothy-vandeth" target="_blank"
+                    rel="noopener">linkedin.com/in/sothy-vandeth</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-details">
+                  <h5>Location</h5>
+                  <p>Mean Chey, Phnom Penh, Cambodia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta-box">
+            <div style="font-size: 3rem; color: var(--red-savage); margin-bottom: 1rem;">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3>Open for Collaboration</h3>
+            <p>
+              Looking for a dedicated Data Scientist or AI Engineer to lead your next research or engineering
+              project? Let's build something impactful together!
+            </p>
+            <a href="mailto:sothyvandeth8034@gmail.com" class="btn-primary"
+              style="width: 100%; justify-content: center;">
+              Send an Email 🚀
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Footer
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <p>Designed &amp; Built with <i class="fa-solid fa-heart footer-heart"></i> by <strong>Sothy VANDETH</strong> ©
+        2026.
+        All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       Lightbox Modal & Toast Notification
+       ========================================== -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Full Screen Portfolio Preview">
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Copied to clipboard! 🚀</div>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
