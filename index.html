@@ -34,7 +34,8 @@
   <header class="navbar">
     <div class="container nav-container">
       <a href="#hero" class="logo">
-        Sothy <span>VANDETH</span>
+        <span class="logo-dot"></span>
+        Sothy <span class="logo-accent">VANDETH</span>
       </a>
       <ul class="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
@@ -45,10 +46,45 @@
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <a href="#contact" class="nav-btn">
-        <i class="fa-solid fa-rocket"></i> Let's Connect
-      </a>
+      <button class="nav-mobile-toggle" id="nav-mobile-toggle" aria-label="Toggle navigation menu"
+        aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </span>
+      </button>
     </div>
+
+    <!-- Mobile Slide-Out Menu -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <nav class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-header">
+        <a href="#hero" class="logo logo-mobile">
+          <span class="logo-dot"></span>
+          Sothy <span class="logo-accent">VANDETH</span>
+        </a>
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-links">
+        <li><a href="#about" class="mobile-link"><i class="fa-regular fa-user"></i> About</a></li>
+        <li><a href="#education" class="mobile-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#publications" class="mobile-link"><i class="fa-solid fa-book-bookmark"></i> Publications</a></li>
+        <li><a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+        <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#gallery" class="mobile-link"><i class="fa-regular fa-images"></i> Gallery</a></li>
+        <li><a href="#contact" class="mobile-link"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+      </ul>
+
+      <div class="mobile-menu-footer">
+        <a href="#contact" class="nav-btn mobile-connect-btn">
+          <i class="fa-solid fa-rocket"></i> Let's Connect
+        </a>
+      </div>
+    </nav>
   </header>
 
   <!-- ==========================================
@@ -64,7 +100,7 @@
           Building Real-World AI for <span class="gradient-text">Emerging Markets</span>.
         </h1>
         <p class="hero-description">
-          IEEE-published researcher specializing in Computer Vision, Deep Learning, and NLP — crafting intelligent
+          IEEE-published researcher specializing in Computer Vision, Deep Learning, and NLP, crafting intelligent
           systems that create tangible impact from Cambodia to the world.
         </p>
         <div class="hero-cta">
@@ -101,20 +137,20 @@
             <div class="polaroid-img-box">
               <img src="assets/images/VST.jpg" alt="Sothy VANDETH — Data Scientist & AI Engineer">
             </div>
-            <div class="polaroid-caption">Sothy VANDETH 🤖</div>
+            <div class="polaroid-caption">Sothy VANDETH</div>
           </div>
           <!-- Floating Badge Cards -->
           <div class="floating-card card-top">
             <div class="floating-icon"><i class="fa-solid fa-brain"></i></div>
             <div class="floating-info">
-              <h4>AI Researcher</h4>
+              <h4>AI Engineer</h4>
               <p>CV • NLP • Deep Learning</p>
             </div>
           </div>
           <div class="floating-card card-bottom">
             <div class="floating-icon"><i class="fa-solid fa-award"></i></div>
             <div class="floating-info">
-              <h4>IEEE Published</h4>
+              <h4>Data Scientist</h4>
               <p>3 International Papers</p>
             </div>
           </div>
@@ -168,7 +204,7 @@
             </p>
             <p>
               From publishing research at international IEEE conferences to interning with government ministries, I
-              bring both academic rigor and real-world practicality to every project — from Cambodia to the world.
+              bring both academic rigor and real-world practicality to every project from Cambodia to the world.
             </p>
           </div>
 
@@ -374,7 +410,7 @@
             </div>
           </div>
 
-          <div class="project-visual-box">
+          <div class="project-visual-box portrait-frame">
             <img src="assets/images/P6.jpeg" alt="MPTC Internship — National Public Service Platform">
           </div>
         </div>
@@ -422,7 +458,7 @@
             </div>
           </div>
 
-          <div class="project-visual-box">
+          <div class="project-visual-box portrait-frame">
             <img src="assets/images/P7.jpeg" alt="MoEYS Data Science Internship">
           </div>
         </div>
@@ -437,7 +473,7 @@
           <span class="project-role-badge"><i class="fa-solid fa-users"></i> May 2025 – Present</span>
         </div>
 
-        <div class="project-grid">
+        <div class="project-grid landscape-project-grid">
           <div>
             <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.8rem;">
               Organizing and coordinating events for the Computer Vision and Artificial Intelligence Club at ITC's
@@ -467,7 +503,7 @@
             </div>
           </div>
 
-          <div class="project-visual-box">
+          <div class="project-visual-box landscape-frame">
             <img src="assets/images/P11.jpeg" alt="Computer Vision & AI Club ITC Events">
           </div>
         </div>
@@ -827,7 +863,7 @@
             <img src="assets/images/P8.jpeg" alt="AI Club Events ITC">
             <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
           </div>
-          <div class="gallery-caption">Vietnam Trip 🤖</div>
+          <div class="gallery-caption">Random Trip 🤖</div>
         </div>
 
         <div class="gallery-item">

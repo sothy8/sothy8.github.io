@@ -340,3 +340,92 @@ function initNetworkCanvas() {
 
   animate();
 }
+
+/* --------------------------------------------------------------------------
+   Mobile Menu Toggle
+   -------------------------------------------------------------------------- */
+(function () {
+  const toggle = document.getElementById('nav-mobile-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const overlay = document.getElementById('mobile-menu-overlay');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  if (!toggle || !menu || !overlay) return;
+
+  function openMenu() {
+    toggle.classList.add('active');
+    toggle.setAttribute('aria-expanded', 'true');
+    menu.classList.add('active');
+    overlay.classList.add('active');
+    document.body.classList.add('mobile-menu-open');
+  }
+
+  function closeMenu() {
+    toggle.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.classList.remove('mobile-menu-open');
+  }
+
+  toggle.addEventListener('click', function () {
+    if (menu.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  // Close menu when clicking overlay or close button
+  overlay.addEventListener('click', closeMenu);
+  
+  const closeBtn = document.getElementById('mobile-menu-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeMenu);
+  }
+
+  // Close menu when clicking a link (smooth scroll to section)
+  mobileLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      closeMenu();
+    });
+  });
+
+  // Close menu when clicking mobile connect button
+  const mobileConnectBtn = menu.querySelector('.mobile-connect-btn');
+  if (mobileConnectBtn) {
+    mobileConnectBtn.addEventListener('click', closeMenu);
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  // Highlight active mobile link based on scroll position
+  const sections = document.querySelectorAll('section[id]');
+
+  function highlightMobileLink() {
+    const scrollY = window.scrollY + 120;
+
+    sections.forEach(function (section) {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+
+      const mobileLink = document.querySelector('.mobile-link[href="#' + id + '"]');
+      if (mobileLink) {
+        if (scrollY >= top && scrollY < top + height) {
+          mobileLink.classList.add('active');
+        } else {
+          mobileLink.classList.remove('active');
+        }
+      }
+    });
+  }
+
+  window.addEventListener('scroll', highlightMobileLink);
+  highlightMobileLink();
+})();
