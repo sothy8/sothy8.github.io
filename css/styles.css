@@ -397,26 +397,7 @@ button {
   margin-bottom: 1.5rem;
 }
 
-.mobile-menu-close {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text-main);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: var(--transition-bounce);
-}
 
-.mobile-menu-close:hover {
-  background: #D60024;
-  color: #FFFFFF;
-  border-color: #D60024;
-}
 
 .mobile-menu-links {
   list-style: none;
@@ -1824,6 +1805,14 @@ footer {
    12. Responsive Breakpoints
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-mobile-toggle {
+    display: flex;
+  }
+
   .hero-grid,
   .about-grid,
   .project-grid,
@@ -1877,18 +1866,6 @@ footer {
   .hero {
     padding-top: 7rem;
     padding-bottom: 3.5rem;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-btn-desktop {
-    display: none;
-  }
-
-  .nav-mobile-toggle {
-    display: flex;
   }
 
   .logo {
