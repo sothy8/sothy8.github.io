@@ -328,7 +328,7 @@ function initNetworkCanvas() {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`;
+          ctx.strokeStyle = `rgba(205, 1, 1, 0.2)`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
