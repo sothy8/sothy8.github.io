@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initSlider();
   initNetworkCanvas();
+  initProjectShowcase();
 });
 
 /* --------------------------------------------------------------------------
@@ -429,3 +430,45 @@ function initNetworkCanvas() {
   window.addEventListener('scroll', highlightMobileLink);
   highlightMobileLink();
 })();
+
+/* --------------------------------------------------------------------------
+   8. Project Visual Showcase Thumbnail Switcher
+   -------------------------------------------------------------------------- */
+function initProjectShowcase() {
+  const showcaseContainers = document.querySelectorAll('.project-visual-showcase');
+
+  showcaseContainers.forEach(container => {
+    const mainImg = container.querySelector('.project-visual-box img');
+    const captionBadge = container.querySelector('.project-visual-caption-badge');
+    const thumbBtns = container.querySelectorAll('.project-thumb-btn');
+
+    if (!mainImg || !thumbBtns.length) return;
+
+    thumbBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        thumbBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const newSrc = btn.getAttribute('data-img');
+        const badgeText = btn.getAttribute('data-badge') || '';
+        const iconClass = btn.getAttribute('data-icon') || 'fa-image';
+
+        mainImg.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+        mainImg.style.opacity = '0.3';
+        mainImg.style.transform = 'scale(0.97)';
+
+        setTimeout(() => {
+          mainImg.src = newSrc;
+          mainImg.alt = `MPTC Internship — ${badgeText}`;
+          if (captionBadge) {
+            captionBadge.innerHTML = `<i class="fa-solid ${iconClass}"></i> ${badgeText}`;
+          }
+          mainImg.style.opacity = '1';
+          mainImg.style.transform = 'scale(1)';
+        }, 180);
+      });
+    });
+  });
+}
+
