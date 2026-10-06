@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initSlider();
   initNetworkCanvas();
-  initProjectShowcase();
+  initProjectSlider();
 });
 
 /* --------------------------------------------------------------------------
@@ -55,7 +55,7 @@ function initLightbox() {
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxClose = document.querySelector('.lightbox-close');
-  const galleryItems = document.querySelectorAll('.gallery-item, .polaroid-wrapper, .project-visual-box, .about-slide');
+  const galleryItems = document.querySelectorAll('.gallery-item, .polaroid-wrapper, .project-visual-box, .about-slide, .project-slide');
 
   galleryItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -432,43 +432,103 @@ function initNetworkCanvas() {
 })();
 
 /* --------------------------------------------------------------------------
-   8. Project Visual Showcase Thumbnail Switcher
+   8. Project Card Image Slider (MPTC)
    -------------------------------------------------------------------------- */
-function initProjectShowcase() {
-  const showcaseContainers = document.querySelectorAll('.project-visual-showcase');
+function initProjectSlider() {
+  const sliderContainer = document.getElementById('mptc-slider-container');
+  if (!sliderContainer) return;
 
-  showcaseContainers.forEach(container => {
-    const mainImg = container.querySelector('.project-visual-box img');
-    const captionBadge = container.querySelector('.project-visual-caption-badge');
-    const thumbBtns = container.querySelectorAll('.project-thumb-btn');
+  const slides = sliderContainer.querySelectorAll('.project-slide');
+  const prevBtn = document.getElementById('mptc-prev');
+  const nextBtn = document.getElementById('mptc-next');
+  const dotsContainer = document.getElementById('mptc-dots');
 
-    if (!mainImg || !thumbBtns.length) return;
+  if (!slides.length) return;
 
-    thumbBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
+  let currentIndex = 0;
+  let autoPlayTimer = null;
+
+  // Create pagination dots dynamically
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+    slides.forEach((_, idx) => {
+      const dot = document.createElement('span');
+      dot.classList.add('project-slider-dot');
+      if (idx === 0) dot.classList.add('active');
+      dot.addEventListener('click', (e) => {
         e.stopPropagation();
-        thumbBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const newSrc = btn.getAttribute('data-img');
-        const badgeText = btn.getAttribute('data-badge') || '';
-        const iconClass = btn.getAttribute('data-icon') || 'fa-image';
-
-        mainImg.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
-        mainImg.style.opacity = '0.3';
-        mainImg.style.transform = 'scale(0.97)';
-
-        setTimeout(() => {
-          mainImg.src = newSrc;
-          mainImg.alt = `MPTC Internship — ${badgeText}`;
-          if (captionBadge) {
-            captionBadge.innerHTML = `<i class="fa-solid ${iconClass}"></i> ${badgeText}`;
-          }
-          mainImg.style.opacity = '1';
-          mainImg.style.transform = 'scale(1)';
-        }, 180);
+        goToSlide(idx);
       });
+      dotsContainer.appendChild(dot);
     });
-  });
+  }
+
+  const dots = dotsContainer ? dotsContainer.querySelectorAll('.project-slider-dot') : [];
+
+  function goToSlide(index) {
+    slides[currentIndex].classList.remove('active');
+    if (dots[currentIndex]) dots[currentIndex].classList.remove('active');
+
+    currentIndex = (index + slides.length) % slides.length;
+
+    slides[currentIndex].classList.add('active');
+    if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+  }
+
+  function nextSlide() {
+    goToSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentIndex - 1);
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nextSlide();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      prevSlide();
+    });
+  }
+
+  function startAutoPlay() {
+    stopAutoPlay();
+    autoPlayTimer = setInterval(nextSlide, 4500);
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayTimer) {
+      clearInterval(autoPlayTimer);
+      autoPlayTimer = null;
+    }
+  }
+
+  sliderContainer.addEventListener('mouseenter', stopAutoPlay);
+  sliderContainer.addEventListener('mouseleave', startAutoPlay);
+
+  // Touch Swipe Support for Mobile
+  let startX = 0;
+  sliderContainer.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    stopAutoPlay();
+  }, { passive: true });
+
+  sliderContainer.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX - endX > 40) {
+      nextSlide();
+    } else if (endX - startX > 40) {
+      prevSlide();
+    }
+    startAutoPlay();
+  }, { passive: true });
+
+  startAutoPlay();
 }
 
